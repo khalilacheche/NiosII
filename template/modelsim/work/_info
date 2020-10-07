@@ -1,0 +1,385 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/HP PC/Google Drive/Teaching/ArchOrd Mirjana/3-multicycle_niosII-workinprogress/project_template/modelsim
+Pcheck_functions
+Z0 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 w1473433240
+Z4 dC:/Users/HP PC/Google Drive/Teaching/ArchOrd Mirjana/3-multicycle_niosII/project_template/modelsim
+Z5 8../testbench/check_functions.vhd
+Z6 F../testbench/check_functions.vhd
+l0
+L6
+VRYe`2[4U73X[nK3nC6gei3
+!s100 eDnLHELO`V5ohl=5KQY@20
+Z7 OV;C;10.4d;61
+31
+b1
+Z8 !s110 1507121053
+!i10b 1
+Z9 !s108 1507121053.000000
+Z10 !s90 -reportprogress|300|-93|../testbench/check_functions.vhd|
+Z11 !s107 ../testbench/check_functions.vhd|
+!i113 1
+o-93
+Z12 tExplicit 1
+Bbody
+Z13 DPx4 work 15 check_functions 0 22 RYe`2[4U73X[nK3nC6gei3
+R0
+R1
+R2
+l0
+L40
+VoehS8`bKGCdlHBEzNX8R21
+!s100 ]Ul<gd[SNh_SV]VQVO[::0
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+o-93
+R12
+Econtroller
+R3
+R1
+R2
+R4
+Z14 8../vhdl/controller.vhd
+Z15 F../vhdl/controller.vhd
+l0
+L4
+V6FhG[9W_gPzHhLgmk`Tje2
+!s100 iLCb?>B5ja1L5iDVmAU]]0
+R7
+31
+R8
+!i10b 1
+R9
+Z16 !s90 -reportprogress|300|-93|../vhdl/controller.vhd|
+Z17 !s107 ../vhdl/controller.vhd|
+!i113 1
+o-93
+R12
+Asynth
+R1
+R2
+DEx4 work 10 controller 0 22 6FhG[9W_gPzHhLgmk`Tje2
+l40
+L39
+VibgYYLcL07i7zeiJ8oam33
+!s100 I@5[7Rha<4mXjGXY?Ha]m2
+R7
+31
+R8
+!i10b 1
+R9
+R16
+R17
+!i113 1
+o-93
+R12
+Eextend
+Z18 w1602057499
+R1
+Z19 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+Z20 dC:/Users/HP/Desktop/Template Processor/template/modelsim
+Z21 8C:/Users/HP/Desktop/Template Processor/template/vhdl/extend.vhd
+Z22 FC:/Users/HP/Desktop/Template Processor/template/vhdl/extend.vhd
+l0
+L4 1
+VUL_6DHeRdI@k7FglXE4m:2
+!s100 [OER<nle^Gzi[Q]KGKSL33
+Z23 OV;C;2020.1;71
+32
+Z24 !s110 1602057565
+!i10b 1
+Z25 !s108 1602057565.000000
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HP/Desktop/Template Processor/template/vhdl/extend.vhd|
+Z27 !s107 C:/Users/HP/Desktop/Template Processor/template/vhdl/extend.vhd|
+!i113 1
+Z28 o-work work -2002 -explicit
+Z29 tExplicit 1 CvgOpt 0
+Asynth
+R1
+R19
+DEx4 work 6 extend 0 22 UL_6DHeRdI@k7FglXE4m:2
+!i122 1
+l13
+L12 6
+V;@f4I4_JGdlAHMolV1ORl3
+!s100 @P_[78h[<YL5`WVbkc<Bn1
+R23
+32
+R24
+!i10b 1
+R25
+R26
+R27
+!i113 1
+R28
+R29
+Eir
+Z30 w1602057243
+R1
+R19
+!i122 0
+R20
+Z31 8C:/Users/HP/Desktop/Template Processor/template/vhdl/IR.vhd
+Z32 FC:/Users/HP/Desktop/Template Processor/template/vhdl/IR.vhd
+l0
+L4 1
+V^D0Sz[@@D76hLF6hc_Qm`1
+!s100 g>VC3<ZiU9SUL1eB^Hc9_3
+R23
+32
+Z33 !s110 1602057559
+!i10b 1
+Z34 !s108 1602057559.000000
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HP/Desktop/Template Processor/template/vhdl/IR.vhd|
+Z36 !s107 C:/Users/HP/Desktop/Template Processor/template/vhdl/IR.vhd|
+!i113 1
+R28
+R29
+Asynth
+R1
+R19
+DEx4 work 2 ir 0 22 ^D0Sz[@@D76hLF6hc_Qm`1
+!i122 0
+l15
+L13 14
+VdalG0Q3;Mkff[[[7QCCW83
+!s100 1<]_U5cM[E0=]OMaiVYP60
+R23
+32
+R33
+!i10b 1
+R34
+R35
+R36
+!i113 1
+R28
+R29
+Emux2x16
+Z37 w1602056322
+R1
+R19
+!i122 3
+R20
+Z38 8C:/Users/HP/Desktop/Template Processor/template/vhdl/mux2x16.vhd
+Z39 FC:/Users/HP/Desktop/Template Processor/template/vhdl/mux2x16.vhd
+l0
+L4 1
+VaHOL`3MF?g?d`[6<SJm^e1
+!s100 ]AkMHg3_OS9:k6cjVd[b:3
+R23
+32
+Z40 !s110 1602057630
+!i10b 1
+Z41 !s108 1602057629.000000
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HP/Desktop/Template Processor/template/vhdl/mux2x16.vhd|
+Z43 !s107 C:/Users/HP/Desktop/Template Processor/template/vhdl/mux2x16.vhd|
+!i113 1
+R28
+R29
+Asynth
+R1
+R19
+DEx4 work 7 mux2x16 0 22 aHOL`3MF?g?d`[6<SJm^e1
+!i122 3
+l14
+Z44 L13 4
+V;1I<9bnKUOGeF^A5MjzL72
+!s100 lf[BP5E8A=9IAY6Y]Ro2R0
+R23
+32
+R40
+!i10b 1
+R41
+R42
+R43
+!i113 1
+R28
+R29
+Emux2x32
+Z45 w1602056330
+R1
+R19
+!i122 4
+R20
+Z46 8C:/Users/HP/Desktop/Template Processor/template/vhdl/mux2x32.vhd
+Z47 FC:/Users/HP/Desktop/Template Processor/template/vhdl/mux2x32.vhd
+l0
+L4 1
+V5<9;E?13m3J1aF01KEAAR1
+!s100 Iab^5l@hZCaSi22IEjFiN0
+R23
+32
+Z48 !s110 1602057637
+!i10b 1
+Z49 !s108 1602057637.000000
+Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HP/Desktop/Template Processor/template/vhdl/mux2x32.vhd|
+Z51 !s107 C:/Users/HP/Desktop/Template Processor/template/vhdl/mux2x32.vhd|
+!i113 1
+R28
+R29
+Asynth
+R1
+R19
+DEx4 work 7 mux2x32 0 22 5<9;E?13m3J1aF01KEAAR1
+!i122 4
+l14
+R44
+Vfi5JQLN;Gg4Mhan385KYo3
+!s100 ]LKYzSdhci2oCPN:EKC7=2
+R23
+32
+R48
+!i10b 1
+R49
+R50
+R51
+!i113 1
+R28
+R29
+Emux2x5
+Z52 w1602056311
+R1
+R19
+!i122 2
+R20
+Z53 8C:/Users/HP/Desktop/Template Processor/template/vhdl/mux2x5.vhd
+Z54 FC:/Users/HP/Desktop/Template Processor/template/vhdl/mux2x5.vhd
+l0
+L4 1
+VW@GMgb]B=<MlVOlGRRM2i3
+!s100 A96?gLbg3Wafg>1JToSDm3
+R23
+32
+Z55 !s110 1602057624
+!i10b 1
+Z56 !s108 1602057624.000000
+Z57 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HP/Desktop/Template Processor/template/vhdl/mux2x5.vhd|
+Z58 !s107 C:/Users/HP/Desktop/Template Processor/template/vhdl/mux2x5.vhd|
+!i113 1
+R28
+R29
+Asynth
+R1
+R19
+DEx4 work 6 mux2x5 0 22 W@GMgb]B=<MlVOlGRRM2i3
+!i122 2
+l14
+R44
+VSJAXW;eK>VZZ_Bj=B4IIP3
+!s100 AXVnY3TEWoZ`[l?2RkDZQ1
+R23
+32
+R55
+!i10b 1
+R56
+R57
+R58
+!i113 1
+R28
+R29
+Epc
+Z59 w1602058904
+Z60 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R1
+R19
+!i122 7
+R20
+Z61 8C:/Users/HP/Desktop/Template Processor/template/vhdl/PC.vhd
+Z62 FC:/Users/HP/Desktop/Template Processor/template/vhdl/PC.vhd
+l0
+L5 1
+VL1PS=`^7Dom5JHh`oiS8z0
+!s100 Vz;DIYb[AY;g5[laVME<e3
+R23
+32
+Z63 !s110 1602058922
+!i10b 1
+Z64 !s108 1602058922.000000
+Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HP/Desktop/Template Processor/template/vhdl/PC.vhd|
+!s107 C:/Users/HP/Desktop/Template Processor/template/vhdl/PC.vhd|
+!i113 1
+R28
+R29
+Asynth
+R60
+R1
+R19
+DEx4 work 2 pc 0 22 L1PS=`^7Dom5JHh`oiS8z0
+!i122 7
+l21
+L19 17
+V_2XJ_TjnPBAR@<BGzcFG81
+!s100 PTO@PFLLAa:Z:HQd6l02M2
+R23
+32
+R63
+!i10b 1
+R64
+R65
+Z66 !s107 C:/Users/HP/Desktop/Template Processor/template/vhdl/PC.vhd|
+!i113 1
+R28
+R29
+Etb_controller
+R3
+R13
+R0
+Z67 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R1
+R2
+R4
+Z68 8../testbench/tb_Controller.vhd
+Z69 F../testbench/tb_Controller.vhd
+l0
+L9
+V0>@NJz45o9SWL71JJI]AM2
+!s100 QPYMI?@zF<fA]gVd9c[kS0
+R7
+31
+Z70 !s110 1507121054
+!i10b 1
+Z71 !s108 1507121054.000000
+Z72 !s90 -reportprogress|300|-93|../testbench/tb_Controller.vhd|
+Z73 !s107 ../testbench/tb_Controller.vhd|
+!i113 1
+o-93
+R12
+Atestbench
+R13
+R0
+R67
+R1
+R2
+DEx4 work 13 tb_controller 0 22 0>@NJz45o9SWL71JJI]AM2
+l102
+L15
+VGiWKHEGIT74Di1J2SFIlH1
+!s100 _WkzDDFBPd:3LHMWS[AoW2
+R7
+31
+R70
+!i10b 1
+R71
+R72
+R73
+!i113 1
+o-93
+R12
