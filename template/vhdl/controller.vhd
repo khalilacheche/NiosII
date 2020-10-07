@@ -36,6 +36,51 @@ entity controller is
     );
 end controller;
 
-architecture synth of controller is
+architecture synth of controller is  
+	 TYPE STATE_TYPE IS (FETCH1, FETCH2, DECODE, R_OP, STORE, BREAK, LOAD1, LOAD2, I_OP);
+	 SIGNAL state: STATE_TYPE;
 begin
+FSM : PROCESS(clk,reset_n) IS
+BEGIN
+	IF (reset_n = '0') THEN
+		 state <= FETCH1;
+	ELSIF (rising_edge(clk))THEN
+	     CASE state IS
+         	WHEN FETCH1 =>
+            	state <= FETCH2;
+         	WHEN FETCH2 =>
+            	state <= DECODE;
+         	WHEN DECODE =>
+				            	
+            WHEN R_OP =>
+            	state <= FETCH1;
+            WHEN STORE =>
+            	state <= FETCH1;
+            WHEN BREAK =>
+            	state <= BREAK;
+            WHEN LOAD1 =>
+            	state <= LOAD2;
+            WHEN LOAD2 =>
+                state <= FETCH1;
+            WHEN I_OP =>
+            	state <= FETCH1;
+      	 END CASE;
+	END IF;
+		
+END PROCESS FSM;
+
+pc_en <= '1' when state = FETCH2 else '0';
+ir_en <= '1' when state = FETCH2 else '0';
+rf_wren <= '1' when state = I_OP else '0';
+                                             
+--
+imm_signed <= '1' when state = I_OP else '0';
+--
+
+read <= '1' when state = FETCH1 else '0';
+
+
+
+
+
 end synth;

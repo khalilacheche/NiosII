@@ -21,7 +21,7 @@ architecture synth of PC is
 begin                                              
 progcount : PROCESS (clk, reset_n) IS
 BEGIN
-  IF (reset_n = '1') THEN
+  IF (reset_n = '0') THEN
 	address <= x"0000";
   ELSIF (rising_edge(clk))  THEN
 	IF (en = '1')THEN

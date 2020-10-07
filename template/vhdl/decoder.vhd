@@ -33,7 +33,7 @@ begin
         			 cs_RAM <= '0' ; 
         			 cs_leds <='1' ;
         			 cs_buttons <= '0';
-        	when 16#203# to 16#2034# =>
+        	when 16#2030# to 16#2034# =>
         			cs_ROM <= '0'; 
         			cs_RAM <= '0' ; 
         			cs_leds <='0' ;
@@ -41,7 +41,8 @@ begin
         	when others => 
         			 cs_ROM <= '0'; 
         			 cs_RAM <= '0' ; 
-        			 cs_leds <='0' ;  
+        			 cs_leds <='0' ;
+        			 cs_buttons <= '0';  
         end case ;	 
         	
    end process ; 
