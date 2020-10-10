@@ -8,7 +8,7 @@ entity decoder is
         cs_LEDS : out std_logic;
         cs_RAM  : out std_logic;
         cs_ROM  : out std_logic;
-        cs_buttons : out std_logic;
+        cs_buttons : out std_logic
     );
 end decoder;
 
