@@ -6,13 +6,35 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity extend
 -- Compiling architecture synth of extend
 
-} {} {}} ../vhdl/mux2x32.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HP/Desktop/Template Processor/template/vhdl/mux2x32.vhd}
+} {} {}} ../testbench/check_functions.vhd {2 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/Documents/GitHub/NiosII/template/testbench/check_functions.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity mux2x32
--- Compiling architecture synth of mux2x32
+-- Loading package std_logic_textio
+-- Compiling package check_functions
+-- Compiling package body check_functions
+-- Loading package check_functions
+** Warning: C:/Users/HP/Documents/GitHub/NiosII/template/testbench/check_functions.vhd(49): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+** Warning: C:/Users/HP/Documents/GitHub/NiosII/template/testbench/check_functions.vhd(59): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+** Warning: C:/Users/HP/Documents/GitHub/NiosII/template/testbench/check_functions.vhd(65): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+** Warning: C:/Users/HP/Documents/GitHub/NiosII/template/testbench/check_functions.vhd(67): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+** Warning: C:/Users/HP/Documents/GitHub/NiosII/template/testbench/check_functions.vhd(68): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+** Warning: C:/Users/HP/Documents/GitHub/NiosII/template/testbench/check_functions.vhd(83): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+** Warning: C:/Users/HP/Documents/GitHub/NiosII/template/testbench/check_functions.vhd(93): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+** Warning: C:/Users/HP/Documents/GitHub/NiosII/template/testbench/check_functions.vhd(99): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+** Warning: C:/Users/HP/Documents/GitHub/NiosII/template/testbench/check_functions.vhd(101): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+** Warning: C:/Users/HP/Documents/GitHub/NiosII/template/testbench/check_functions.vhd(102): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+** Warning: C:/Users/HP/Documents/GitHub/NiosII/template/testbench/check_functions.vhd(117): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+** Warning: C:/Users/HP/Documents/GitHub/NiosII/template/testbench/check_functions.vhd(127): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+** Warning: C:/Users/HP/Documents/GitHub/NiosII/template/testbench/check_functions.vhd(133): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+** Warning: C:/Users/HP/Documents/GitHub/NiosII/template/testbench/check_functions.vhd(135): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+** Warning: C:/Users/HP/Documents/GitHub/NiosII/template/testbench/check_functions.vhd(136): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+** Warning: C:/Users/HP/Documents/GitHub/NiosII/template/testbench/check_functions.vhd(151): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+** Warning: C:/Users/HP/Documents/GitHub/NiosII/template/testbench/check_functions.vhd(161): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+** Warning: C:/Users/HP/Documents/GitHub/NiosII/template/testbench/check_functions.vhd(167): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+** Warning: C:/Users/HP/Documents/GitHub/NiosII/template/testbench/check_functions.vhd(169): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+** Warning: C:/Users/HP/Documents/GitHub/NiosII/template/testbench/check_functions.vhd(170): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
 
 } {} {}} ../vhdl/mux2x5.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HP/Desktop/Template Processor/template/vhdl/mux2x5.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -22,6 +44,128 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity mux2x5
 -- Compiling architecture synth of mux2x5
 
+} {} {}} ../vhdl/IR.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HP/Desktop/Template Processor/template/vhdl/IR.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity IR
+-- Compiling architecture synth of IR
+
+} {} {}} ../vhdl/PC.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/PC.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity PC
+-- Compiling architecture synth of PC
+
+} {} {}} ../vhdl/register_file.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/register_file.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity register_file
+-- Compiling architecture synth of register_file
+
+} {} {}} ../testbench/tb_Extend.vhd {2 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/Documents/GitHub/NiosII/template/testbench/tb_Extend.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package check_functions
+-- Compiling entity tb_Extend
+-- Compiling architecture testbench of tb_Extend
+** Warning: C:/Users/HP/Documents/GitHub/NiosII/template/testbench/tb_Extend.vhd(40): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+** Warning: C:/Users/HP/Documents/GitHub/NiosII/template/testbench/tb_Extend.vhd(42): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+
+} {} {}} ../vhdl/buttons.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/buttons.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity buttons
+-- Compiling architecture synth of buttons
+
+} {} {}} ../vhdl/RAM.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/RAM.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity RAM
+-- Compiling architecture synth of RAM
+
+} {} {}} ../vhdl/LEDs.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/LEDs.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity LEDs
+-- Compiling architecture synth of LEDs
+
+} {} {}} ../testbench/tb_GECKO.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/Documents/GitHub/NiosII/template/testbench/tb_GECKO.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_GECKO
+-- Compiling architecture testbench of tb_GECKO
+-- Loading entity GECKO
+
+} {} {}} ../vhdl/CPU.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/CPU.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity CPU
+-- Compiling architecture bdf_type of CPU
+
+} {} {}} ../vhdl/mux2x32.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HP/Desktop/Template Processor/template/vhdl/mux2x32.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux2x32
+-- Compiling architecture synth of mux2x32
+
+} {} {}} ../vhdl/GECKO.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/GECKO.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity GECKO
+-- Compiling architecture bdf_type of GECKO
+
+} {} {}} ../testbench/tb_PC.vhd {2 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/Documents/GitHub/NiosII/template/testbench/tb_PC.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package check_functions
+-- Compiling entity tb_PC
+-- Compiling architecture testbench of tb_PC
+** Warning: C:/Users/HP/Documents/GitHub/NiosII/template/testbench/tb_PC.vhd(57): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+** Warning: C:/Users/HP/Documents/GitHub/NiosII/template/testbench/tb_PC.vhd(59): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+
+} {} {}} ../testbench/tb_IR.vhd {2 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/Documents/GitHub/NiosII/template/testbench/tb_IR.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package check_functions
+-- Compiling entity tb_IR
+-- Compiling architecture testbench of tb_IR
+** Warning: C:/Users/HP/Documents/GitHub/NiosII/template/testbench/tb_IR.vhd(42): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+** Warning: C:/Users/HP/Documents/GitHub/NiosII/template/testbench/tb_IR.vhd(44): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+
 } {} {}} ../vhdl/mux2x16.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HP/Desktop/Template Processor/template/vhdl/mux2x16.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
@@ -30,12 +174,35 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity mux2x16
 -- Compiling architecture synth of mux2x16
 
-} {} {}} ../vhdl/IR.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HP/Desktop/Template Processor/template/vhdl/IR.vhd}
+} {} {}} ../testbench/tb_Controller.vhd {2 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/Documents/GitHub/NiosII/template/testbench/tb_Controller.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity IR
--- Compiling architecture synth of IR
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Loading package check_functions
+-- Compiling entity tb_Controller
+-- Compiling architecture testbench of tb_Controller
+** Warning: C:/Users/HP/Documents/GitHub/NiosII/template/testbench/tb_Controller.vhd(129): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+** Warning: C:/Users/HP/Documents/GitHub/NiosII/template/testbench/tb_Controller.vhd(130): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+
+} {} {}} ../vhdl/shift_unit.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/shift_unit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity shift_unit
+-- Compiling architecture synth of shift_unit
+
+} {} {}} ../vhdl/decoder.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/decoder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity decoder
+-- Compiling architecture synth of decoder
 
 } {} {}}

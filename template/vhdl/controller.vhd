@@ -38,10 +38,21 @@ end controller;
 
 architecture synth of controller is  
 	 TYPE STATE_TYPE IS (FETCH1, FETCH2, DECODE, R_OP, STORE, BREAK, LOAD1, LOAD2, I_OP);
-	 SIGNAL state: STATE_TYPE;
-begin
-FSM : PROCESS(clk,reset_n) IS
-BEGIN
+	 SIGNAL state: STATE_TYPE; 
+	 signal s_op , s_opx : std_logic_vector(7 downto 0 ) ; 
+begin                            
+
+FSM : PROCESS(clk,reset_n,op ,opx) IS
+BEGIN         
+  
+	branch_op <= '0';
+	pc_add_imm <= '0';
+	pc_sel_a <= '0';
+	pc_sel_imm <= '0';
+	sel_pc <= '0';
+	sel_ra <= '0';                     
+ 	s_op <= "00" & op ; 
+	s_opx <= "00" & opx;  
 	IF (reset_n = '0') THEN
 		 state <= FETCH1;
 	ELSIF (rising_edge(clk))THEN
@@ -49,9 +60,15 @@ BEGIN
          	WHEN FETCH1 =>
             	state <= FETCH2;
          	WHEN FETCH2 =>
-            	state <= DECODE;
+            	state <= DECODE;   
+            	
          	WHEN DECODE =>
-				            	
+				 if(s_op = X"3A" and s_opx /= X"34" ) then state <= R_OP;    
+				 elsif (s_op = x"04") then state <= I_OP;
+				 elsif (s_op = x"17" ) then state <= LOAD1;
+				 elsif (s_op = x"15" ) then state <= STORE;
+				 elsif (s_op = x"3A" and s_opx = x"34" ) then state <= BREAK; 
+				 end if ; 	
             WHEN R_OP =>
             	state <= FETCH1;
             WHEN STORE =>
@@ -71,16 +88,31 @@ END PROCESS FSM;
 
 pc_en <= '1' when state = FETCH2 else '0';
 ir_en <= '1' when state = FETCH2 else '0';
-rf_wren <= '1' when state = I_OP else '0';
-                                             
+rf_wren <= '1' when state = I_OP or state = R_OP or state=LOAD2 else '0'; 
+sel_b <= '1' when state = R_OP  else '0' ; 
+sel_rC <= '1' when state = R_OP else '0'; 
+sel_addr <= '1' when state = LOAD1 or state = STORE else '0' ; 
+          
+write <= '1' when state = STORE else '0' ;                                    
 --
-imm_signed <= '1' when state = I_OP else '0';
+imm_signed <= '1' when state = I_OP or state = STORE OR state= LOAD1 else '0';
 --
 
-read <= '1' when state = FETCH1 else '0';
-
-
-
-
+read <= '1' when state = FETCH1 or state = LOAD1  else '0';
+sel_mem <=  '1' when state=LOAD2 else '0' ; 
+                                               
+alu_out : PROCESS(state, s_opx) IS
+	CONSTANT AND_OPCODE : std_logic_vector(5 downto 0) := "100001";
+	CONSTANT SRL_OPCODE : std_logic_vector(5 downto 0) := "110011";
+	BEGIN                            
+	op_alu<=(OTHERS=>'0');	
+	IF (state = R_OP) THEN
+		IF (s_opx = x"0E") THEN
+			op_alu <= AND_OPCODE;
+		ELSIF (s_opx = x"1B")THEN
+			op_alu <= SRL_OPCODE;
+		END IF;
+	END IF;
+	END PROCESS alu_out;
 
 end synth;
