@@ -1468,3 +1468,761 @@ do test_IR.do
 # ===================================================================
 # Simulation is successful
 # ===================================================================
+# Compile of add_sub.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of comparator.vhd was successful.
+# Compile of logic_unit.vhd was successful.
+# Compile of multiplexer.vhd was successful.
+# Compile of ROM.vhd was successful.
+# Compile of ROM_Block.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.tb_gecko
+# End time: 21:24:35 on Oct 10,2020, Elapsed time: 0:35:23
+# Errors: 0, Warnings: 2
+# vsim work.tb_gecko 
+# Start time: 21:24:35 on Oct 10,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_gecko(testbench)
+# Loading work.gecko(bdf_type)
+# Loading ieee.numeric_std(body)
+# Loading work.buttons(fast)
+# Loading work.decoder(fast)
+# Loading work.cpu(bdf_type)
+# Loading work.alu(bdf_type)
+# Loading work.add_sub(fast)
+# Loading work.comparator(fast)
+# Loading work.logic_unit(fast)
+# Loading work.multiplexer(fast)
+# Loading work.shift_unit(fast)
+# Loading work.controller(fast)
+# Loading work.extend(fast)
+# Loading work.ir(fast)
+# Loading work.mux2x16(fast)
+# Loading work.mux2x5(fast)
+# Loading work.mux2x32(fast)
+# Loading work.pc(fast)
+# Loading work.register_file(fast)
+# Loading work.leds(fast)
+# Loading work.ram(fast)
+# Loading work.rom(fast)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_gecko/gecko_0/b2v_ROM_0/rddata(31) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_gecko/gecko_0/b2v_ROM_0/rddata(30) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_gecko/gecko_0/b2v_ROM_0/rddata(29) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_gecko/gecko_0/b2v_ROM_0/rddata(28) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_gecko/gecko_0/b2v_ROM_0/rddata(27) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_gecko/gecko_0/b2v_ROM_0/rddata(26) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_gecko/gecko_0/b2v_ROM_0/rddata(25) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_gecko/gecko_0/b2v_ROM_0/rddata(24) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_gecko/gecko_0/b2v_ROM_0/rddata(23) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_gecko/gecko_0/b2v_ROM_0/rddata(22) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_gecko/gecko_0/b2v_ROM_0/rddata(21) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_gecko/gecko_0/b2v_ROM_0/rddata(20) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_gecko/gecko_0/b2v_ROM_0/rddata(19) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_gecko/gecko_0/b2v_ROM_0/rddata(18) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_gecko/gecko_0/b2v_ROM_0/rddata(17) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_gecko/gecko_0/b2v_ROM_0/rddata(16) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_gecko/gecko_0/b2v_ROM_0/rddata(15) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_gecko/gecko_0/b2v_ROM_0/rddata(14) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_gecko/gecko_0/b2v_ROM_0/rddata(13) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_gecko/gecko_0/b2v_ROM_0/rddata(12) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_gecko/gecko_0/b2v_ROM_0/rddata(11) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_gecko/gecko_0/b2v_ROM_0/rddata(10) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_gecko/gecko_0/b2v_ROM_0/rddata(9) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_gecko/gecko_0/b2v_ROM_0/rddata(8) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_gecko/gecko_0/b2v_ROM_0/rddata(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_gecko/gecko_0/b2v_ROM_0/rddata(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_gecko/gecko_0/b2v_ROM_0/rddata(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_gecko/gecko_0/b2v_ROM_0/rddata(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_gecko/gecko_0/b2v_ROM_0/rddata(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_gecko/gecko_0/b2v_ROM_0/rddata(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_gecko/gecko_0/b2v_ROM_0/rddata(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_gecko/gecko_0/b2v_ROM_0/rddata(0) has no driver.
+# This port will contribute value (U) to the signal network.
+do test_Controller0.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying C:/Users/HP/Documents/GitHub/NiosII/template/modelsim/multicycle_niosII.mpf
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:02:21 on Oct 10,2020
+# vcom -reportprogress 300 -93 ../vhdl/controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controller
+# -- Compiling architecture synth of controller
+# End time: 23:02:21 on Oct 10,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:02:21 on Oct 10,2020
+# vcom -reportprogress 300 -93 ../testbench/check_functions.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Compiling package check_functions
+# -- Compiling package body check_functions
+# -- Loading package check_functions
+# ** Warning: ../testbench/check_functions.vhd(49): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(59): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(65): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(67): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(68): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(83): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(93): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(99): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(101): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(102): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(117): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(127): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(133): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(135): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(136): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(151): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(161): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(167): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(169): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(170): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# End time: 23:02:21 on Oct 10,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 20
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:02:21 on Oct 10,2020
+# vcom -reportprogress 300 -93 ../testbench/tb_Controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package check_functions
+# -- Compiling entity tb_Controller
+# -- Compiling architecture testbench of tb_Controller
+# ** Warning: ../testbench/tb_Controller.vhd(129): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/tb_Controller.vhd(130): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# End time: 23:02:21 on Oct 10,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# End time: 23:02:22 on Oct 10,2020, Elapsed time: 1:37:47
+# Errors: 0, Warnings: 33
+# vsim tb_Controller -t ns -Gtext_in=Controller/in0.txt 
+# Start time: 23:02:22 on Oct 10,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.check_functions(body)
+# Loading work.tb_controller(testbench)
+# Loading work.controller(fast)
+# -=Controller test:======================================================
+# -=Testing the first version of the CPU==================================
+# --and
+# --srl
+# --addi
+# --ldw
+# ** Error: Unexpected output value for op_alu
+#    Time: 66 ns  Iteration: 1  Instance: /tb_controller
+# --stw
+# ** Error: Unexpected output value for op_alu
+#    Time: 86 ns  Iteration: 1  Instance: /tb_controller
+# --break
+# --and
+# ===================================================================
+# Errors encountered during simulation. Refer to the report.txt file.
+# ===================================================================
+# Compile of controller.vhd was successful.
+do test_Controller0.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying C:/Users/HP/Documents/GitHub/NiosII/template/modelsim/multicycle_niosII.mpf
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:04:03 on Oct 10,2020
+# vcom -reportprogress 300 -93 ../vhdl/controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controller
+# -- Compiling architecture synth of controller
+# End time: 23:04:03 on Oct 10,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:04:03 on Oct 10,2020
+# vcom -reportprogress 300 -93 ../testbench/check_functions.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Compiling package check_functions
+# -- Compiling package body check_functions
+# -- Loading package check_functions
+# ** Warning: ../testbench/check_functions.vhd(49): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(59): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(65): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(67): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(68): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
+# ** Warning: ../testbench/check_functions.vhd(83): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(93): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(99): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(101): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(102): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
+# ** Warning: ../testbench/check_functions.vhd(117): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(127): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(133): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(135): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(136): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
+# ** Warning: ../testbench/check_functions.vhd(151): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/check_functions.vhd(161): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(167): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(169): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# ** Warning: ../testbench/check_functions.vhd(170): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
+# End time: 23:04:03 on Oct 10,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 20
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:04:03 on Oct 10,2020
+# vcom -reportprogress 300 -93 ../testbench/tb_Controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package check_functions
+# -- Compiling entity tb_Controller
+# -- Compiling architecture testbench of tb_Controller
+# ** Warning: ../testbench/tb_Controller.vhd(129): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# ** Warning: ../testbench/tb_Controller.vhd(130): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# End time: 23:04:03 on Oct 10,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# End time: 23:04:05 on Oct 10,2020, Elapsed time: 0:01:43
+# Errors: 2, Warnings: 2
+# vsim tb_Controller -t ns -Gtext_in=Controller/in0.txt 
+# Start time: 23:04:05 on Oct 10,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.check_functions(body)
+# Loading work.tb_controller(testbench)
+# Loading work.controller(fast)
+# -=Controller test:======================================================
+# -=Testing the first version of the CPU==================================
+# --and
+# --srl
+# --addi
+# --ldw
+# --stw
+# --break
+# --and
+# ===================================================================
+# Simulation is successful
+# ===================================================================
+# Compile of ROM.vhd failed with 1 errors.
+# Compile of ROM.vhd failed with 1 errors.
+# Compile of ROM.vhd failed with 2 errors.
+# Compile of ROM.vhd failed with 2 errors.
+# Compile of ROM.vhd was successful.
+vsim work.tb_gecko
+# End time: 15:52:51 on Oct 11,2020, Elapsed time: 16:48:46
+# Errors: 0, Warnings: 6
+# vsim work.tb_gecko 
+# Start time: 15:52:51 on Oct 11,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_gecko(testbench)
+# Loading work.gecko(bdf_type)
+# Loading ieee.numeric_std(body)
+# Loading work.buttons(fast)
+# Loading work.decoder(fast)
+# Loading work.cpu(bdf_type)
+# Loading work.alu(bdf_type)
+# Loading work.add_sub(fast)
+# Loading work.comparator(fast)
+# Loading work.logic_unit(fast)
+# Loading work.multiplexer(fast)
+# Loading work.shift_unit(fast)
+# Loading work.controller(fast)
+# Loading work.extend(fast)
+# Loading work.ir(fast)
+# Loading work.mux2x16(fast)
+# Loading work.mux2x5(fast)
+# Loading work.mux2x32(fast)
+# Loading work.pc(fast)
+# Loading work.register_file(fast)
+# Loading work.leds(fast)
+# Loading work.ram(fast)
+# Loading work.rom(fast)
+# Loading work.rom_block(syn)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)
+run 1000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+add wave -position insertpoint  \
+sim:/tb_gecko/gecko_0/b2v_inst/address
+add wave -position insertpoint  \
+sim:/tb_gecko/gecko_0/b2v_inst/clk
+add wave -position insertpoint  \
+sim:/tb_gecko/gecko_0/b2v_inst/wrdata
+add wave -position insertpoint  \
+sim:/tb_gecko/gecko_0/b2v_inst/a
+add wave -position insertpoint  \
+sim:/tb_gecko/gecko_0/b2v_inst/b
+add wave -position insertpoint  \
+sim:/tb_gecko/gecko_0/b2v_inst/op_alu
+add wave -position insertpoint  \
+sim:/tb_gecko/gecko_0/b2v_inst/alu_res
+run 1000
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run 1000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+run 1000 -t ns
+# ** UI-Msg: (vsim-4001) Incorrect number of arguments.
+# Usage: run [<timesteps> [<time_units>]] | -all | -continue | -next | -step | -over | -out | -init | -final
+add wave -position insertpoint sim:/tb_gecko/*
+run 1000 -t ns
+# ** UI-Msg: (vsim-4001) Incorrect number of arguments.
+# Usage: run [<timesteps> [<time_units>]] | -all | -continue | -next | -step | -over | -out | -init | -final
+quit -sim
+# End time: 16:02:54 on Oct 11,2020, Elapsed time: 0:10:03
+# Errors: 0, Warnings: 4
+vsim -t ns work.tb_gecko
+# vsim -t ns work.tb_gecko 
+# Start time: 16:03:32 on Oct 11,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_gecko(testbench)
+# Loading work.gecko(bdf_type)
+# Loading ieee.numeric_std(body)
+# Loading work.buttons(fast)
+# Loading work.decoder(fast)
+# Loading work.cpu(bdf_type)
+# Loading work.alu(bdf_type)
+# Loading work.add_sub(fast)
+# Loading work.comparator(fast)
+# Loading work.logic_unit(fast)
+# Loading work.multiplexer(fast)
+# Loading work.shift_unit(fast)
+# Loading work.controller(fast)
+# Loading work.extend(fast)
+# Loading work.ir(fast)
+# Loading work.mux2x16(fast)
+# Loading work.mux2x5(fast)
+# Loading work.mux2x32(fast)
+# Loading work.pc(fast)
+# Loading work.register_file(fast)
+# Loading work.leds(fast)
+# Loading work.ram(fast)
+# Loading work.rom(fast)
+# Loading work.rom_block(syn)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)
+add wave -position insertpoint sim:/tb_gecko/*
+add wave -position insertpoint  \
+sim:/tb_gecko/gecko_0/b2v_inst/b2v_controller_0/op_alu
+add wave -position insertpoint  \
+sim:/tb_gecko/gecko_0/b2v_inst/b2v_controller_0/state
+run 1000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+add wave -position insertpoint  \
+sim:/tb_gecko/gecko_0/b2v_inst/b2v_controller_0/op
+add wave -position insertpoint  \
+sim:/tb_gecko/gecko_0/b2v_inst/b2v_controller_0/opx
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run 1000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+add wave -position insertpoint sim:/tb_gecko/gecko_0/b2v_ROM_0/*
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run 1000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run 1000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run 1000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+# Compile of ROM_Block.vhd was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading altera_mf.altera_mf_components
+# Loading work.rom_block(syn)
+# ** Fatal: (vsim-3348) Port length (15) does not match actual length (10) for port "/tb_gecko/gecko_0/b2v_ROM_0/rb/address".
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_ROM_0/rb File: C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/ROM_Block.vhd Line: 46
+# FATAL ERROR while loading design
+run 1000
+# No Design Loaded!
+restart -f
+# No Design Loaded!
+vsim -t ns work.tb_gecko
+# vsim -t ns work.tb_gecko 
+# Start time: 16:03:32 on Oct 11,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_gecko(testbench)
+# Loading work.gecko(bdf_type)
+# Loading ieee.numeric_std(body)
+# Loading work.buttons(fast)
+# Loading work.decoder(fast)
+# Loading work.cpu(bdf_type)
+# Loading work.alu(bdf_type)
+# Loading work.add_sub(fast)
+# Loading work.comparator(fast)
+# Loading work.logic_unit(fast)
+# Loading work.multiplexer(fast)
+# Loading work.shift_unit(fast)
+# Loading work.controller(fast)
+# Loading work.extend(fast)
+# Loading work.ir(fast)
+# Loading work.mux2x16(fast)
+# Loading work.mux2x5(fast)
+# Loading work.mux2x32(fast)
+# Loading work.pc(fast)
+# Loading work.register_file(fast)
+# Loading work.leds(fast)
+# Loading work.ram(fast)
+# Loading work.rom(fast)
+# Loading altera_mf.altera_mf_components
+# Loading work.rom_block(syn)
+# ** Fatal: (vsim-3348) Port length (15) does not match actual length (10) for port "/tb_gecko/gecko_0/b2v_ROM_0/rb/address".
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_ROM_0/rb File: C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/ROM_Block.vhd Line: 46
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 16:36:51 on Oct 11,2020, Elapsed time: 0:33:19
+# Errors: 2, Warnings: 1
+vsim -t ns work.tb_gecko
+# vsim -t ns work.tb_gecko 
+# Start time: 16:37:11 on Oct 11,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_gecko(testbench)
+# Loading work.gecko(bdf_type)
+# Loading ieee.numeric_std(body)
+# Loading work.buttons(fast)
+# Loading work.decoder(fast)
+# Loading work.cpu(bdf_type)
+# Loading work.alu(bdf_type)
+# Loading work.add_sub(fast)
+# Loading work.comparator(fast)
+# Loading work.logic_unit(fast)
+# Loading work.multiplexer(fast)
+# Loading work.shift_unit(fast)
+# Loading work.controller(fast)
+# Loading work.extend(fast)
+# Loading work.ir(fast)
+# Loading work.mux2x16(fast)
+# Loading work.mux2x5(fast)
+# Loading work.mux2x32(fast)
+# Loading work.pc(fast)
+# Loading work.register_file(fast)
+# Loading work.leds(fast)
+# Loading work.ram(fast)
+# Loading work.rom(fast)
+# Loading altera_mf.altera_mf_components
+# Loading work.rom_block(syn)
+# ** Fatal: (vsim-3348) Port length (15) does not match actual length (10) for port "/tb_gecko/gecko_0/b2v_ROM_0/rb/address".
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_ROM_0/rb File: C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/ROM_Block.vhd Line: 46
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 16:37:11 on Oct 11,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 4
+# Compile of ROM_Block.vhd was successful.
+vsim -t ns work.tb_gecko
+# vsim -t ns work.tb_gecko 
+# Start time: 16:39:58 on Oct 11,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_gecko(testbench)
+# Loading work.gecko(bdf_type)
+# Loading ieee.numeric_std(body)
+# Loading work.buttons(fast)
+# Loading work.decoder(fast)
+# Loading work.cpu(bdf_type)
+# Loading work.alu(bdf_type)
+# Loading work.add_sub(fast)
+# Loading work.comparator(fast)
+# Loading work.logic_unit(fast)
+# Loading work.multiplexer(fast)
+# Loading work.shift_unit(fast)
+# Loading work.controller(fast)
+# Loading work.extend(fast)
+# Loading work.ir(fast)
+# Loading work.mux2x16(fast)
+# Loading work.mux2x5(fast)
+# Loading work.mux2x32(fast)
+# Loading work.pc(fast)
+# Loading work.register_file(fast)
+# Loading work.leds(fast)
+# Loading work.ram(fast)
+# Loading work.rom(fast)
+# Loading altera_mf.altera_mf_components
+# Loading work.rom_block(syn)
+# ** Fatal: (vsim-3817) Port "data" of entity "rom_block" is not in the component being instantiated.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_ROM_0/rb File: C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/ROM_Block.vhd Line: 48
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 16:39:58 on Oct 11,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+# Compile of ROM_Block.vhd was successful.
+vsim -t ns work.tb_gecko
+# vsim -t ns work.tb_gecko 
+# Start time: 16:42:01 on Oct 11,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_gecko(testbench)
+# Loading work.gecko(bdf_type)
+# Loading ieee.numeric_std(body)
+# Loading work.buttons(fast)
+# Loading work.decoder(fast)
+# Loading work.cpu(bdf_type)
+# Loading work.alu(bdf_type)
+# Loading work.add_sub(fast)
+# Loading work.comparator(fast)
+# Loading work.logic_unit(fast)
+# Loading work.multiplexer(fast)
+# Loading work.shift_unit(fast)
+# Loading work.controller(fast)
+# Loading work.extend(fast)
+# Loading work.ir(fast)
+# Loading work.mux2x16(fast)
+# Loading work.mux2x5(fast)
+# Loading work.mux2x32(fast)
+# Loading work.pc(fast)
+# Loading work.register_file(fast)
+# Loading work.leds(fast)
+# Loading work.ram(fast)
+# Loading work.rom(fast)
+# Loading altera_mf.altera_mf_components
+# Loading work.rom_block(syn)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)
+run 1000
+# ** Warning: (vsim-7) Failed to open VHDL file "ROM.hex" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_ROM_0/rb/altsyncram_component
+# ** Fatal: (vsim-7) Failed to open VHDL file "ROM.hex" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ns  Iteration: 0  Process: /tb_gecko/gecko_0/b2v_ROM_0/rb/altsyncram_component/MEMORY File: C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd
+# Fatal error in Process MEMORY at C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd line 40061
+# 
+# HDL call sequence:
+# Stopped at C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd 40061 Subprogram read_my_memory
+# called from  C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd 41911 Process MEMORY
+# 
+run 1000
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd 40061 Subprogram read_my_memory
+# called from  C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd 41911 Process MEMORY
+# 
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run 1000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+add wave -position insertpoint sim:/tb_gecko/gecko_0/b2v_inst/b2v_IR_0/*
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run 1000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+add wave -position insertpoint  \
+sim:/tb_gecko/gecko_0/b2v_inst/b2v_PC_0/addr
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run 1000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+# Compile of ROM.vhd was successful.
+# Compile of ROM.vhd was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.rom(fast)
+run 1000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Compile of ROM.vhd was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.rom(fast)
+run 1000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+# Compile of ROM.vhd was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.rom(fast)
+run 1000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+# Compile of ROM.vhd was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.rom(fast)
+run 1000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 80 ns  Iteration: 3  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 80 ns  Iteration: 3  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# Compile of ROM.vhd was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.rom(fast)
+run 1000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+# Compile of ROM.vhd was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.rom(fast)
+run 1000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 80 ns  Iteration: 3  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 80 ns  Iteration: 3  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# Compile of ROM.vhd was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.rom(fast)
+run 1000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_decoder_0

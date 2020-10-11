@@ -1,4 +1,21 @@
-../vhdl/extend.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HP/Desktop/Template Processor/template/vhdl/extend.vhd}
+../vhdl/ROM_Block.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/ROM_Block.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package altera_mf_components
+-- Compiling entity ROM_Block
+-- Compiling architecture SYN of rom_block
+
+} {} {}} ../vhdl/comparator.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/comparator.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity comparator
+-- Compiling architecture synth of comparator
+
+} {} {}} ../vhdl/extend.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HP/Desktop/Template Processor/template/vhdl/extend.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -44,6 +61,31 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity mux2x5
 -- Compiling architecture synth of mux2x5
 
+} {} {}} ../vhdl/ALU.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/ALU.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ALU
+-- Compiling architecture bdf_type of ALU
+
+} {} {}} ../vhdl/add_sub.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/add_sub.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity add_sub
+-- Compiling architecture synth of add_sub
+
+} {} {}} ../vhdl/multiplexer.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/multiplexer.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity multiplexer
+-- Compiling architecture synth of multiplexer
+
 } {} {}} ../vhdl/IR.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HP/Desktop/Template Processor/template/vhdl/IR.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
@@ -60,6 +102,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package NUMERIC_STD
 -- Compiling entity PC
 -- Compiling architecture synth of PC
+
+} {} {}} ../vhdl/controller.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/controller.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity controller
+-- Compiling architecture synth of controller
 
 } {} {}} ../vhdl/register_file.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/register_file.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -186,6 +236,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling architecture testbench of tb_Controller
 ** Warning: C:/Users/HP/Documents/GitHub/NiosII/template/testbench/tb_Controller.vhd(129): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
 ** Warning: C:/Users/HP/Documents/GitHub/NiosII/template/testbench/tb_Controller.vhd(130): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+
+} {} {}} ../vhdl/logic_unit.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/logic_unit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity logic_unit
+-- Compiling architecture synth of logic_unit
 
 } {} {}} ../vhdl/shift_unit.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/shift_unit.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020

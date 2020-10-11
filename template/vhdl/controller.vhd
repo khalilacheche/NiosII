@@ -112,6 +112,8 @@ alu_out : PROCESS(state, s_opx) IS
 		ELSIF (s_opx = x"1B")THEN
 			op_alu <= SRL_OPCODE;
 		END IF;
+	ELSIF state = I_OP THEN
+		op_alu <= op;
 	END IF;
 	END PROCESS alu_out;
 
