@@ -37,20 +37,13 @@ entity controller is
 end controller;
 
 architecture synth of controller is  
-	 TYPE STATE_TYPE IS (FETCH1, FETCH2, DECODE, R_OP, STORE, BREAK, LOAD1, LOAD2, I_OP);
+	 TYPE STATE_TYPE IS (FETCH1, FETCH2, DECODE, BRANCH, CALL, CALL_R, R_OP, JMP, JMPI, STORE, BREAK, LOAD1, LOAD2, I_OP);
 	 SIGNAL state: STATE_TYPE; 
 	 signal s_op , s_opx : std_logic_vector(7 downto 0 ) ; 
 begin                            
 
 FSM : PROCESS(clk,reset_n,op ,opx) IS
-BEGIN         
-  
-	branch_op <= '0';
-	pc_add_imm <= '0';
-	pc_sel_a <= '0';
-	pc_sel_imm <= '0';
-	sel_pc <= '0';
-	sel_ra <= '0';                     
+BEGIN              
  	s_op <= "00" & op ; 
 	s_opx <= "00" & opx;  
 	IF (reset_n = '0') THEN
@@ -67,7 +60,12 @@ BEGIN
 				 elsif (s_op = x"04") then state <= I_OP;
 				 elsif (s_op = x"17" ) then state <= LOAD1;
 				 elsif (s_op = x"15" ) then state <= STORE;
-				 elsif (s_op = x"3A" and s_opx = x"34" ) then state <= BREAK; 
+				 elsif (s_op = x"3A" and s_opx = x"34" ) then state <= BREAK;
+				 elsif (s_op = x"06" OR  s_op = x"0E" OR s_op = x"16" OR s_op = x"1E" OR s_op = x"26" OR s_op = x"2E" OR s_op = x"36") then state <= BRANCH;
+				 elsif (s_op = x"00") then state <= CALL; 
+				 elsif (s_op = x"3A" and s_opx = x"1D") then state <= CALL_R;
+				 elsif (s_op = x"01")then state <= JMPI;
+				 elsif (s_op = x"3A" and (s_opx = x"0D" or s_opx = x"05" )) then state <= JMP;
 				 end if ; 	
             WHEN R_OP =>
             	state <= FETCH1;
@@ -81,39 +79,57 @@ BEGIN
                 state <= FETCH1;
             WHEN I_OP =>
             	state <= FETCH1;
+            WHEN JMP =>
+            	state <= FETCH1;
+			WHEN JMPI =>
+            	state <= FETCH1;
+            WHEN BRANCH =>
+            	state <= FETCH1;
+            WHEN CALL =>
+            	state <= FETCH1;
+            WHEN CALL_R =>
+            	state <= FETCH1;
       	 END CASE;
 	END IF;
 		
 END PROCESS FSM;
 
-pc_en <= '1' when state = FETCH2 else '0';
+------------- ENABLES --------------------------
+pc_en <= '1' when state = FETCH2 or state = CALL_R or state = JMP or state = JMPI else '0';
 ir_en <= '1' when state = FETCH2 else '0';
-rf_wren <= '1' when state = I_OP or state = R_OP or state=LOAD2 else '0'; 
-sel_b <= '1' when state = R_OP  else '0' ; 
-sel_rC <= '1' when state = R_OP else '0'; 
-sel_addr <= '1' when state = LOAD1 or state = STORE else '0' ; 
-          
-write <= '1' when state = STORE else '0' ;                                    
+rf_wren <= '1' when state = I_OP or state = R_OP or state=LOAD2 or state = CALL_R else '0'; 
+
+------------- Read/Write -----------------------           
+write <= '1' when state = STORE else '0' ;   
+read <= '1' when state = FETCH1 or state = LOAD1  else '0';                                  
 --
 imm_signed <= '1' when state = I_OP or state = STORE OR state= LOAD1 else '0';
---
+--                                                                              
 
-read <= '1' when state = FETCH1 or state = LOAD1  else '0';
+branch_op <= '1' when state = BRANCH else '0';
+pc_add_imm <= '1' when state = BRANCH else '0';
+pc_sel_imm <= '1' when state = CALL or state = JMPI else '0'; 
+pc_sel_a <= '1' when state = CALL_R or state = JMP else '0';
+
+   
+
+------------- MUXES ----------------------------
 sel_mem <=  '1' when state=LOAD2 else '0' ; 
-                                               
-alu_out : PROCESS(state, s_opx) IS
-	CONSTANT AND_OPCODE : std_logic_vector(5 downto 0) := "100001";
-	CONSTANT SRL_OPCODE : std_logic_vector(5 downto 0) := "110011";
+sel_b <= '1' when state = R_OP or state = BRANCH  else '0' ; 
+sel_rC <= '1' when state = R_OP else '0'; 
+sel_addr <= '1' when state = LOAD1 or state = STORE else '0' ; 
+sel_ra <= '1' when state = CALL or state = CALL_R  else '0';
+sel_pc <= '1' when state = CALL_R else '0';
+
+
+------------- ALU OUT --------------------------                                             
+alu_out : PROCESS(state) IS
 	BEGIN                            
 	op_alu<=(OTHERS=>'0');	
 	IF (state = R_OP) THEN
-		IF (s_opx = x"0E") THEN
-			op_alu <= AND_OPCODE;
-		ELSIF (s_opx = x"1B")THEN
-			op_alu <= SRL_OPCODE;
-		END IF;
-	ELSIF state = I_OP THEN
-		op_alu <= op;
+		op_alu(2 downto 0) <= opx(5 downto 3);
+	ELSIF (state = I_OP OR state = BRANCH OR state = CALL ) THEN
+		op_alu(2 downto 0) <= op(5 downto 3);
 	END IF;
 	END PROCESS alu_out;
 

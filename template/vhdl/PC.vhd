@@ -25,7 +25,15 @@ BEGIN
 	address <= x"0000";
   ELSIF (rising_edge(clk))  THEN
 	IF (en = '1')THEN
-		address <= std_logic_vector(unsigned(address) + 4);
+		IF (add_imm ='1') THEN                                     
+			address <= std_logic_vector(unsigned(address) + unsigned(imm));
+		ELSIF  (sel_imm = '1') THEN                                                          
+			address <= std_logic_vector(shift_left(unsigned(imm), 2));
+		ELSIF (sel_a = '1') THEN
+			address <= a;  
+		ELSE
+			address <= std_logic_vector(unsigned(address) + 4);
+		END IF;
 	END IF;
   END IF;
 END PROCESS progcount;

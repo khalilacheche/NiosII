@@ -140,7 +140,7 @@ Pcheck_functions
 Z27 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
 R2
 R3
-!i122 86
+!i122 122
 R20
 R4
 Z28 8../testbench/check_functions.vhd
@@ -152,9 +152,9 @@ V6aLKC8M`WFbUTzDPW6He83
 R7
 31
 b1
-Z30 !s110 1602363843
+Z30 !s110 1602676266
 !i10b 1
-Z31 !s108 1602363843.000000
+Z31 !s108 1602676266.000000
 Z32 !s90 -reportprogress|300|-93|../testbench/check_functions.vhd|
 Z33 !s107 ../testbench/check_functions.vhd|
 !i113 1
@@ -165,7 +165,7 @@ Z34 DPx4 work 15 check_functions 0 22 6aLKC8M`WFbUTzDPW6He83
 R27
 R2
 R3
-!i122 86
+!i122 122
 l0
 L40 1
 Vl_?7YlfeIC=0oLhh:^F<e2
@@ -222,10 +222,10 @@ R38
 R12
 R13
 Econtroller
-Z39 w1602363799
+Z39 w1602676262
 R2
 R3
-!i122 85
+!i122 121
 R4
 Z40 8../vhdl/controller.vhd
 Z41 F../vhdl/controller.vhd
@@ -247,11 +247,11 @@ Asynth
 R2
 R3
 DEx4 work 10 controller 0 22 >:mGA0fg1bnEUkAc9L0EZ3
-!i122 85
+!i122 121
 l43
-L39 82
-VRj^PjZa@j8<N7T543NF1b3
-!s100 3Y?^mJHa=R<4iTdYoVSg@1
+L39 98
+V0J]24TY@]_Q^h0GWnZ:`a0
+!s100 2aOQV1ZlnLX?WBF:3F=BL1
 R7
 31
 R30
@@ -718,11 +718,11 @@ R110
 R12
 R13
 Epc
-Z111 w1602064962
+Z111 w1602672997
 R1
 R2
 R3
-!i122 42
+!i122 115
 R4
 Z112 8../vhdl/PC.vhd
 Z113 F../vhdl/PC.vhd
@@ -732,9 +732,9 @@ VNn?=zTB=WL19i;=KJYcA52
 !s100 Vz;DIYb[AY;g5[laVME<e3
 R7
 31
-Z114 !s110 1602238232
+Z114 !s110 1602673092
 !i10b 1
-Z115 !s108 1602238232.000000
+Z115 !s108 1602673092.000000
 Z116 !s90 -reportprogress|300|-93|../vhdl/PC.vhd|
 Z117 !s107 ../vhdl/PC.vhd|
 !i113 1
@@ -745,11 +745,11 @@ R1
 R2
 R3
 DEx4 work 2 pc 0 22 Nn?=zTB=WL19i;=KJYcA52
-!i122 42
+!i122 115
 l21
-L19 16
-VI^;A@f`Z=?c_9UKHX;]R91
-!s100 b2Xze:TRoDn32TSmd:;f00
+L19 24
+V^mjGAK9i8NCQ2dJ=?;1GY0
+!s100 URf>WioT=zZ;2YY^Haek_3
 R7
 31
 R114
@@ -847,10 +847,10 @@ R128
 R12
 R13
 Erom
-Z129 w1602433699
+Z129 w1602436521
 R2
 R3
-!i122 103
+!i122 106
 R4
 Z130 8C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/ROM.vhd
 Z131 FC:/Users/HP/Documents/GitHub/NiosII/template/vhdl/ROM.vhd
@@ -860,9 +860,9 @@ VLD>LKJh0<<KfR_G::f?6B1
 !s100 LzhnA0@bLeKPHkcXf<L3g3
 R7
 32
-Z132 !s110 1602433701
+Z132 !s110 1602671306
 !i10b 1
-Z133 !s108 1602433701.000000
+Z133 !s108 1602671306.000000
 Z134 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/ROM.vhd|
 Z135 !s107 C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/ROM.vhd|
 !i113 1
@@ -871,8 +871,8 @@ R13
 Asynth
 R2
 R3
-Z136 DEx4 work 3 rom 0 22 LD>LKJh0<<KfR_G::f?6B1
-!i122 103
+DEx4 work 3 rom 0 22 LD>LKJh0<<KfR_G::f?6B1
+!i122 106
 l27
 L15 25
 VEHY2IKV@I8@`Qa09JkL0A2
@@ -888,57 +888,57 @@ R135
 R12
 R13
 Erom_block
-Z137 w1602427305
-Z138 DPx9 altera_mf 20 altera_mf_components 0 22 HVLmIbRl@QhXfWVOmhK<j1
+Z136 w1602672609
+Z137 DPx9 altera_mf 20 altera_mf_components 0 22 HVLmIbRl@QhXfWVOmhK<j1
 R2
 R3
-!i122 95
+!i122 114
 R4
-Z139 8C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/ROM_Block.vhd
-Z140 FC:/Users/HP/Documents/GitHub/NiosII/template/vhdl/ROM_Block.vhd
+Z138 8C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/ROM_Block.vhd
+Z139 FC:/Users/HP/Documents/GitHub/NiosII/template/vhdl/ROM_Block.vhd
 l0
 L43 1
 VU9c?^ehT?UHajSJOA:KS20
 !s100 ]8Q[GP[YlW48DPj49SUTX2
 R7
 32
-Z141 !s110 1602427320
+Z140 !s110 1602672635
 !i10b 1
-Z142 !s108 1602427320.000000
-Z143 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/ROM_Block.vhd|
-Z144 !s107 C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/ROM_Block.vhd|
+Z141 !s108 1602672635.000000
+Z142 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/ROM_Block.vhd|
+Z143 !s107 C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/ROM_Block.vhd|
 !i113 1
 R12
 R13
 Asyn
-R138
+R137
 R2
 R3
 DEx4 work 9 rom_block 0 22 U9c?^ehT?UHajSJOA:KS20
-!i122 95
+!i122 114
 l57
 L53 33
-V7M4@5z;FXL^OV7?MdanS81
-!s100 G0`FK0V9;;ajG=jX1A4451
+VUEg]?2n`]UMaG7Mi`:HG=2
+!s100 2@=;_zfAgN]i3nmf90W9A2
 R7
 32
-R141
+R140
 !i10b 1
+R141
 R142
 R143
-R144
 !i113 1
 R12
 R13
 Eshift_unit
-Z145 w1602053640
+Z144 w1602053640
 R1
 R2
 R3
 !i122 23
 R4
-Z146 8C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/shift_unit.vhd
-Z147 FC:/Users/HP/Documents/GitHub/NiosII/template/vhdl/shift_unit.vhd
+Z145 8C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/shift_unit.vhd
+Z146 FC:/Users/HP/Documents/GitHub/NiosII/template/vhdl/shift_unit.vhd
 l0
 L5 1
 VoYz=ZP:Rg2U9Eb=ZGo>940
@@ -948,8 +948,8 @@ R7
 R76
 !i10b 1
 R121
-Z148 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/shift_unit.vhd|
-Z149 !s107 C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/shift_unit.vhd|
+Z147 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/shift_unit.vhd|
+Z148 !s107 C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/shift_unit.vhd|
 !i113 1
 R12
 R13
@@ -968,8 +968,8 @@ R7
 R76
 !i10b 1
 R121
+R147
 R148
-R149
 !i113 1
 R12
 R13
@@ -980,10 +980,10 @@ R27
 R1
 R2
 R3
-!i122 87
+!i122 123
 R4
-Z150 8../testbench/tb_Controller.vhd
-Z151 F../testbench/tb_Controller.vhd
+Z149 8../testbench/tb_Controller.vhd
+Z150 F../testbench/tb_Controller.vhd
 l0
 L9 1
 V3E@KN_PfWzKDMi@e_IcgN1
@@ -993,8 +993,8 @@ R7
 R30
 !i10b 1
 R31
-Z152 !s90 -reportprogress|300|-93|../testbench/tb_Controller.vhd|
-Z153 !s107 ../testbench/tb_Controller.vhd|
+Z151 !s90 -reportprogress|300|-93|../testbench/tb_Controller.vhd|
+Z152 !s107 ../testbench/tb_Controller.vhd|
 !i113 1
 o-93
 R13
@@ -1004,19 +1004,19 @@ R27
 R1
 R2
 R3
-DEx4 work 13 tb_controller 0 22 3E@KN_PfWzKDMi@e_IcgN1
-!i122 87
+Z153 DEx4 work 13 tb_controller 0 22 3E@KN_PfWzKDMi@e_IcgN1
+!i122 123
 l102
-L15 417
-V3M1BHZOYlAHk5ZM;AdXib3
-!s100 _WkzDDFBPd:3LHMWS[AoW2
+Z154 L15 417
+Z155 V3M1BHZOYlAHk5ZM;AdXib3
+Z156 !s100 _WkzDDFBPd:3LHMWS[AoW2
 R7
 31
 R30
 !i10b 1
 R31
+R151
 R152
-R153
 !i113 1
 o-93
 R13
@@ -1028,8 +1028,8 @@ R2
 R3
 !i122 70
 R4
-Z154 8../testbench/tb_Extend.vhd
-Z155 F../testbench/tb_Extend.vhd
+Z157 8../testbench/tb_Extend.vhd
+Z158 F../testbench/tb_Extend.vhd
 l0
 L8 1
 V8Ch;2Pa@J9]HVLTHFko753
@@ -1039,8 +1039,8 @@ R7
 R58
 !i10b 1
 R59
-Z156 !s90 -reportprogress|300|-93|../testbench/tb_Extend.vhd|
-Z157 !s107 ../testbench/tb_Extend.vhd|
+Z159 !s90 -reportprogress|300|-93|../testbench/tb_Extend.vhd|
+Z160 !s107 ../testbench/tb_Extend.vhd|
 !i113 1
 o-93
 R13
@@ -1060,8 +1060,8 @@ R7
 R58
 !i10b 1
 R59
-R156
-R157
+R159
+R160
 !i113 1
 o-93
 R13
@@ -1071,8 +1071,8 @@ R2
 R3
 !i122 16
 R4
-Z158 8C:/Users/HP/Documents/GitHub/NiosII/template/testbench/tb_GECKO.vhd
-Z159 FC:/Users/HP/Documents/GitHub/NiosII/template/testbench/tb_GECKO.vhd
+Z161 8C:/Users/HP/Documents/GitHub/NiosII/template/testbench/tb_GECKO.vhd
+Z162 FC:/Users/HP/Documents/GitHub/NiosII/template/testbench/tb_GECKO.vhd
 l0
 L4 1
 V5Tbz7Kl=147iIIz>>A8Y[3
@@ -1082,8 +1082,8 @@ R7
 R51
 !i10b 1
 R52
-Z160 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HP/Documents/GitHub/NiosII/template/testbench/tb_GECKO.vhd|
-Z161 !s107 C:/Users/HP/Documents/GitHub/NiosII/template/testbench/tb_GECKO.vhd|
+Z163 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HP/Documents/GitHub/NiosII/template/testbench/tb_GECKO.vhd|
+Z164 !s107 C:/Users/HP/Documents/GitHub/NiosII/template/testbench/tb_GECKO.vhd|
 !i113 1
 R12
 R13
@@ -1102,8 +1102,8 @@ R7
 R51
 !i10b 1
 R52
-R160
-R161
+R163
+R164
 !i113 1
 R12
 R13
@@ -1115,8 +1115,8 @@ R2
 R3
 !i122 73
 R4
-Z162 8../testbench/tb_IR.vhd
-Z163 F../testbench/tb_IR.vhd
+Z165 8../testbench/tb_IR.vhd
+Z166 F../testbench/tb_IR.vhd
 l0
 L8 1
 VMJ[mRa_mYoP5]W?VAdX_f1
@@ -1126,8 +1126,8 @@ R7
 R70
 !i10b 1
 R71
-Z164 !s90 -reportprogress|300|-93|../testbench/tb_IR.vhd|
-Z165 !s107 ../testbench/tb_IR.vhd|
+Z167 !s90 -reportprogress|300|-93|../testbench/tb_IR.vhd|
+Z168 !s107 ../testbench/tb_IR.vhd|
 !i113 1
 o-93
 R13
@@ -1147,8 +1147,8 @@ R7
 R70
 !i10b 1
 R71
-R164
-R165
+R167
+R168
 !i113 1
 o-93
 R13
@@ -1158,21 +1158,21 @@ R34
 R27
 R2
 R3
-!i122 44
+!i122 117
 R4
-Z166 8../testbench/tb_PC.vhd
-Z167 F../testbench/tb_PC.vhd
+Z169 8../testbench/tb_PC.vhd
+Z170 F../testbench/tb_PC.vhd
 l0
 L8 1
 V2P^Ye]=DcVobhf_EG_H431
 !s100 _Sjg^6a@flK7I1KVlG]Sm2
 R7
 31
-Z168 !s110 1602238233
+R114
 !i10b 1
-Z169 !s108 1602238233.000000
-Z170 !s90 -reportprogress|300|-93|../testbench/tb_PC.vhd|
-Z171 !s107 ../testbench/tb_PC.vhd|
+R115
+Z171 !s90 -reportprogress|300|-93|../testbench/tb_PC.vhd|
+Z172 !s107 ../testbench/tb_PC.vhd|
 !i113 1
 o-93
 R13
@@ -1182,18 +1182,18 @@ R27
 R2
 R3
 DEx4 work 5 tb_pc 0 22 2P^Ye]=DcVobhf_EG_H431
-!i122 44
+!i122 117
 l42
 L11 127
 Vf5G`eZIn6KizE:]=3UeFm0
 !s100 gKH@n?YGO`P>Bz<MRbX@K0
 R7
 31
-R168
+R114
 !i10b 1
-R169
-R170
+R115
 R171
+R172
 !i113 1
 o-93
 R13
