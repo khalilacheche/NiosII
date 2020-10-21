@@ -59,7 +59,7 @@ BEGIN
          		 if(s_op=x"3A" and (s_opx =x"12" or s_opx =x"1A" or s_opx =x"3A" or s_opx =x"02")) then state <= R_EXECUTE ;    
          		 elsif (s_op = x"3A" and (s_opx = x"0D" or s_opx = x"05" )) then state <= JMP;  
          		 elsif (s_op = x"3A" and s_opx = x"1D") then state <= CALL_R;
-				 elsif(s_op = X"3A" ) then state <= R_OP;   
+				   
 				 elsif(s_op = x"0C" or s_op = x"14" or s_op = x"1C" or s_op=x"28" or s_op=x"30") then state <= I_EXECUTE ;  
 		
 				 elsif (s_op = x"17" ) then state <= LOAD1;
@@ -68,7 +68,8 @@ BEGIN
 				 elsif (s_op = x"06" OR  s_op = x"0E" OR s_op = x"16" OR s_op = x"1E" OR s_op = x"26" OR s_op = x"2E" OR s_op = x"36") then state <= BRANCH;
 				 elsif (s_op = x"00") then state <= CALL; 
 				 
-				 elsif (s_op = x"01")then state <= JMPI; 
+				 elsif (s_op = x"01")then state <= JMPI;   
+				 elsif(s_op = X"3A" ) then state <= R_OP;
 				 else state <= I_OP;
 			
 				 end if ; 	
@@ -161,7 +162,7 @@ alu_out : PROCESS(s_opx,s_op) IS
         						when x"02" => op_alu <= "110000" ; 
 								when others => 	op_alu(2 downto 0) <= opx(5 downto 3);   
 	   					end case ; 
-			when x"0c" => op_alu <= "100001" ; 
+			when x"0C" => op_alu <= "100001" ; 
 			when x"14" => op_alu <= "100010" ;  
 			when x"1C" => op_alu <= "100011" ; 
 			when x"28" => op_alu <= "011101" ; 
@@ -176,12 +177,14 @@ alu_out : PROCESS(s_opx,s_op) IS
        		when x"1E" => op_alu <= "011011"; 
        		when x"26" => op_alu <= "011100";  
        		when x"2E" => op_alu <= "011101"; 
-       		when x"36" => op_alu <= "011110"; 
-		    when others => 	op_alu(2 downto 0) <= op(5 downto 3); 
+       		when x"36" => op_alu <= "011110";   
+       	
+		    when others => 	op_alu <= "000000"; 
 		 END CASE ; 
    
        
        
+                                                  
     
 	END PROCESS alu_out;
 
