@@ -37,6 +37,7 @@ BEGIN
 	END IF;
   END IF;
 END PROCESS progcount;
-addr(15 downto 0) <= address;
+addr(15 downto 2) <= address(15 downto 2);
+addr(1 downto 0) <= (OTHERS=>'0');
 addr(31 downto 16) <= (OTHERS=>'0');
 end synth;

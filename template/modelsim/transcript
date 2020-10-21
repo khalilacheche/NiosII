@@ -1,18 +1,6 @@
-# Compile of controller.vhd failed with 1 errors.
-# Compile of PC.vhd failed with 4 errors.
-# Compile of ROM.vhd was successful.
-# 3 compiles, 2 failed with 5 errors.
-# Compile of controller.vhd failed with 1 errors.
-# Compile of PC.vhd failed with 4 errors.
-# 2 compiles, 2 failed with 5 errors.
-# Compile of PC.vhd failed with 4 errors.
-# Compile of PC.vhd failed with 1 errors.
-# Compile of PC.vhd was successful.
-# Compile of controller.vhd failed with 1 errors.
-# Compile of controller.vhd was successful.
 vsim -gui work.tb_gecko
 # vsim -gui work.tb_gecko 
-# Start time: 12:45:13 on Oct 14,2020
+# Start time: 12:28:14 on Oct 21,2020
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -47,578 +35,265 @@ vsim -gui work.tb_gecko
 # Loading altera_mf.altera_device_families(body)
 # Loading altera_mf.altsyncram(translated)
 add wave -position insertpoint  \
-sim:/tb_gecko/gecko_0/clk
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: HP  Hostname: LAPTOP-L02PH027  ProcessID: 24864
-#           Attempting to use alternate WLF file "./wlft612812".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft612812
-add wave -position insertpoint  \
-sim:/tb_gecko/gecko_0/reset_n
-add wave -position insertpoint  \
-sim:/tb_gecko/gecko_0/b2v_inst/b2v_controller_0/state
-vsim run 1000
-# End time: 12:46:41 on Oct 14,2020, Elapsed time: 0:01:28
-# Errors: 0, Warnings: 12
-# vsim run 1000 
-# Start time: 12:46:41 on Oct 14,2020
-# ** Error: (vsim-3170) Could not find 'run'.
-#         Searched libraries:
-#             C:/Users/HP/Documents/GitHub/NiosII/template/modelsim/work
-# Error loading design
-# End time: 12:46:41 on Oct 14,2020, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 1
-run 1000
-# No Design Loaded!
-vsim -gui work.tb_gecko -t ns
-# vsim -gui work.tb_gecko -t ns 
-# Start time: 12:47:20 on Oct 14,2020
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.tb_gecko(testbench)
-# Loading work.gecko(bdf_type)
-# Loading ieee.numeric_std(body)
-# Loading work.buttons(fast)
-# Loading work.decoder(fast)
-# Loading work.cpu(bdf_type)
-# Loading work.alu(bdf_type)
-# Loading work.add_sub(fast)
-# Loading work.comparator(fast)
-# Loading work.logic_unit(fast)
-# Loading work.multiplexer(fast)
-# Loading work.shift_unit(fast)
-# Loading work.controller(fast)
-# Loading work.extend(fast)
-# Loading work.ir(fast)
-# Loading work.mux2x16(fast)
-# Loading work.mux2x5(fast)
-# Loading work.mux2x32(fast)
-# Loading work.pc(fast)
-# Loading work.register_file(fast)
-# Loading work.leds(fast)
-# Loading work.ram(fast)
-# Loading work.rom(fast)
-# Loading altera_mf.altera_mf_components
-# Loading work.rom_block(syn)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading altera_mf.altera_common_conversion(body)
-# Loading altera_mf.altera_device_families(body)
-# Loading altera_mf.altsyncram(translated)
-add wave -position insertpoint  \
-sim:/tb_gecko/gecko_0/b2v_inst/b2v_controller_0/state
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: HP  Hostname: LAPTOP-L02PH027  ProcessID: 24864
-#           Attempting to use alternate WLF file "./wlftwn650x".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftwn650x
-add wave -position insertpoint  \
-sim:/tb_gecko/clk
-add wave -position insertpoint  \
+sim:/tb_gecko/clk \
 sim:/tb_gecko/reset_n
-run 1000
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: HP  Hostname: LAPTOP-L02PH027  ProcessID: 24864
+#           Attempting to use alternate WLF file "./wlft9swyjy".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft9swyjy
+add wave -position insertpoint  \
+sim:/tb_gecko/gecko_0/b2v_inst/b2v_alu_0/a \
+sim:/tb_gecko/gecko_0/b2v_inst/b2v_alu_0/b \
+sim:/tb_gecko/gecko_0/b2v_inst/b2v_alu_0/op \
+sim:/tb_gecko/gecko_0/b2v_inst/b2v_alu_0/s
+add wave -position insertpoint  \
+sim:/tb_gecko/gecko_0/b2v_inst/b2v_controller_0/state
+add wave -position insertpoint  \
+sim:/tb_gecko/gecko_0/b2v_inst/b2v_controller_0/pc_sel_imm
+add wave -position insertpoint  \
+sim:/tb_gecko/gecko_0/b2v_inst/b2v_controller_0/branch_op
+add wave -position insertpoint  \
+sim:/tb_gecko/gecko_0/b2v_inst/b2v_PC_0/addr
+add wave -position insertpoint  \
+sim:/tb_gecko/gecko_0/b2v_inst/b2v_PC_0/en
+run 1000000
+# ** Warning: (vsim-7) Failed to open VHDL file "../../Users/HP/Documents/GitHub/NiosII/template/modelsim/ROM.hex" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_ROM_0/rb/altsyncram_component
+# ** Fatal: (vsim-7) Failed to open VHDL file "../../Users/HP/Documents/GitHub/NiosII/template/modelsim/ROM.hex" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Process: /tb_gecko/gecko_0/b2v_ROM_0/rb/altsyncram_component/MEMORY File: C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd
+# Fatal error in Process MEMORY at C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd line 40061
+# 
+# HDL call sequence:
+# Stopped at C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd 40061 Subprogram read_my_memory
+# called from  C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd 41911 Process MEMORY
+# 
+run 1000000
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd 40061 Subprogram read_my_memory
+# called from  C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd 41911 Process MEMORY
+# 
+run 1000000
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd 40061 Subprogram read_my_memory
+# called from  C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd 41911 Process MEMORY
+# 
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run 1000000
+# ** Warning: (vsim-7) Failed to open VHDL file "../../Users/HP/Documents/GitHub/NiosII/template/modelsim/ROM.hex" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_ROM_0/rb/altsyncram_component
+# ** Fatal: (vsim-7) Failed to open VHDL file "../../Users/HP/Documents/GitHub/NiosII/template/modelsim/ROM.hex" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Process: /tb_gecko/gecko_0/b2v_ROM_0/rb/altsyncram_component/MEMORY File: C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd
+# Fatal error in Process MEMORY at C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd line 40061
+# 
+# HDL call sequence:
+# Stopped at C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd 40061 Subprogram read_my_memory
+# called from  C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd 41911 Process MEMORY
+# 
+run 1000000
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd 40061 Subprogram read_my_memory
+# called from  C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd 41911 Process MEMORY
+# 
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run 1000000
+# ** Warning: (vsim-7) Failed to open VHDL file "../../Users/HP/Documents/GitHub/NiosII/template/modelsim/ROM.hex" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_ROM_0/rb/altsyncram_component
+# ** Fatal: (vsim-7) Failed to open VHDL file "../../Users/HP/Documents/GitHub/NiosII/template/modelsim/ROM.hex" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Process: /tb_gecko/gecko_0/b2v_ROM_0/rb/altsyncram_component/MEMORY File: C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd
+# Fatal error in Process MEMORY at C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd line 40061
+# 
+# HDL call sequence:
+# Stopped at C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd 40061 Subprogram read_my_memory
+# called from  C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd 41911 Process MEMORY
+# 
 # Compile of ROM_Block.vhd was successful.
 restart -f
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 # Loading work.rom_block(syn)
-run 1000
+run 1000000
+# ** Warning: (vsim-7) Failed to open VHDL file "../../Users/HP/Documents/GitHub/NiosII/template/quartus/ROM.hex" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_ROM_0/rb/altsyncram_component
+# ** Fatal: (vsim-7) Failed to open VHDL file "../../Users/HP/Documents/GitHub/NiosII/template/quartus/ROM.hex" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Process: /tb_gecko/gecko_0/b2v_ROM_0/rb/altsyncram_component/MEMORY File: C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd
+# Fatal error in Process MEMORY at C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd line 40061
+# 
+# HDL call sequence:
+# Stopped at C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd 40061 Subprogram read_my_memory
+# called from  C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd 41911 Process MEMORY
+# 
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run 1000000
+# ** Warning: (vsim-7) Failed to open VHDL file "../../Users/HP/Documents/GitHub/NiosII/template/quartus/ROM.hex" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_ROM_0/rb/altsyncram_component
+# ** Fatal: (vsim-7) Failed to open VHDL file "../../Users/HP/Documents/GitHub/NiosII/template/quartus/ROM.hex" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Process: /tb_gecko/gecko_0/b2v_ROM_0/rb/altsyncram_component/MEMORY File: C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd
+# Fatal error in Process MEMORY at C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd line 40061
+# 
+# HDL call sequence:
+# Stopped at C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd 40061 Subprogram read_my_memory
+# called from  C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd 41911 Process MEMORY
+# 
+run 1000000
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd 40061 Subprogram read_my_memory
+# called from  C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd 41911 Process MEMORY
+# 
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run 1000000
+# ** Warning: (vsim-7) Failed to open VHDL file "../../Users/HP/Documents/GitHub/NiosII/template/quartus/ROM.hex" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_ROM_0/rb/altsyncram_component
+# ** Fatal: (vsim-7) Failed to open VHDL file "../../Users/HP/Documents/GitHub/NiosII/template/quartus/ROM.hex" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Process: /tb_gecko/gecko_0/b2v_ROM_0/rb/altsyncram_component/MEMORY File: C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd
+# Fatal error in Process MEMORY at C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd line 40061
+# 
+# HDL call sequence:
+# Stopped at C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd 40061 Subprogram read_my_memory
+# called from  C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd 41911 Process MEMORY
+# 
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Compile of ROM_Block.vhd was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.rom_block(syn)
+run 1000000
+# ** Warning: (vsim-7) Failed to open VHDL file "../../Users/HP/Documents/GitHub/NiosII/template/quartus/ROM.hex" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_ROM_0/rb/altsyncram_component
+# ** Fatal: (vsim-7) Failed to open VHDL file "../../Users/HP/Documents/GitHub/NiosII/template/quartus/ROM.hex" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Process: /tb_gecko/gecko_0/b2v_ROM_0/rb/altsyncram_component/MEMORY File: C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd
+# Fatal error in Process MEMORY at C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd line 40061
+# 
+# HDL call sequence:
+# Stopped at C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd 40061 Subprogram read_my_memory
+# called from  C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd 41911 Process MEMORY
+# 
+# Compile of ROM_Block.vhd was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.rom_block(syn)
+run 1000000
+# ** Warning: (vsim-7) Failed to open VHDL file "../C:/Users/HP/Documents/GitHub/NiosII/template/quartus/ROM.hex" in rb mode.
+# Invalid argument. (errno = EINVAL)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_ROM_0/rb/altsyncram_component
+# ** Fatal: (vsim-7) Failed to open VHDL file "../C:/Users/HP/Documents/GitHub/NiosII/template/quartus/ROM.hex" in rb mode.
+# Invalid argument. (errno = EINVAL)
+#    Time: 0 ps  Iteration: 0  Process: /tb_gecko/gecko_0/b2v_ROM_0/rb/altsyncram_component/MEMORY File: C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd
+# Fatal error in Process MEMORY at C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd line 40061
+# 
+# HDL call sequence:
+# Stopped at C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd 40061 Subprogram read_my_memory
+# called from  C:/intelFPGA/20.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd 41911 Process MEMORY
+# 
+# Compile of ROM_Block.vhd was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.rom_block(syn)
+run 1000000
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_decoder_0
-quit -sim
-# End time: 12:57:59 on Oct 14,2020, Elapsed time: 0:10:39
-# Errors: 0, Warnings: 4
-do test_PC.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work work 
-# Modifying C:/Users/HP/Documents/GitHub/NiosII/template/modelsim/multicycle_niosII.mpf
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:58:12 on Oct 14,2020
-# vcom -reportprogress 300 -93 ../vhdl/PC.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity PC
-# -- Compiling architecture synth of PC
-# End time: 12:58:12 on Oct 14,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:58:12 on Oct 14,2020
-# vcom -reportprogress 300 -93 ../testbench/check_functions.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Compiling package check_functions
-# -- Compiling package body check_functions
-# -- Loading package check_functions
-# ** Warning: ../testbench/check_functions.vhd(49): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
-# ** Warning: ../testbench/check_functions.vhd(59): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
-# ** Warning: ../testbench/check_functions.vhd(65): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
-# ** Warning: ../testbench/check_functions.vhd(67): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
-# ** Warning: ../testbench/check_functions.vhd(68): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
-# ** Warning: ../testbench/check_functions.vhd(83): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
-# ** Warning: ../testbench/check_functions.vhd(93): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
-# ** Warning: ../testbench/check_functions.vhd(99): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
-# ** Warning: ../testbench/check_functions.vhd(101): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
-# ** Warning: ../testbench/check_functions.vhd(102): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
-# ** Warning: ../testbench/check_functions.vhd(117): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
-# ** Warning: ../testbench/check_functions.vhd(127): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
-# ** Warning: ../testbench/check_functions.vhd(133): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
-# ** Warning: ../testbench/check_functions.vhd(135): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
-# ** Warning: ../testbench/check_functions.vhd(136): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
-# ** Warning: ../testbench/check_functions.vhd(151): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
-# ** Warning: ../testbench/check_functions.vhd(161): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
-# ** Warning: ../testbench/check_functions.vhd(167): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
-# ** Warning: ../testbench/check_functions.vhd(169): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
-# ** Warning: ../testbench/check_functions.vhd(170): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
-# End time: 12:58:12 on Oct 14,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 20
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:58:12 on Oct 14,2020
-# vcom -reportprogress 300 -93 ../testbench/tb_PC.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Loading package check_functions
-# -- Compiling entity tb_PC
-# -- Compiling architecture testbench of tb_PC
-# ** Warning: ../testbench/tb_PC.vhd(57): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
-# ** Warning: ../testbench/tb_PC.vhd(59): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
-# End time: 12:58:13 on Oct 14,2020, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 2
-# vsim tb_PC 
-# Start time: 12:58:13 on Oct 14,2020
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.std_logic_textio(body)
-# Loading work.check_functions(body)
-# Loading work.tb_pc(testbench)
-# Loading ieee.numeric_std(body)
-# Loading work.pc(fast)
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: HP  Hostname: LAPTOP-L02PH027  ProcessID: 24864
-#           Attempting to use alternate WLF file "./wlfty1camh".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfty1camh
-# - Program Counter test:
-# - reset_n test...
-# - sel_imm test...
-# - sel_a test...
-# - add_imm test...
-# - enable test...
-# - pc+4 test...
-# ===================================================================
-# Simulation is successful
-# ===================================================================
-do test_Controller.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work work 
-# Modifying C:/Users/HP/Documents/GitHub/NiosII/template/modelsim/multicycle_niosII.mpf
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:47:26 on Oct 14,2020
-# vcom -reportprogress 300 -93 ../vhdl/controller.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity controller
-# -- Compiling architecture synth of controller
-# End time: 13:47:26 on Oct 14,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:47:26 on Oct 14,2020
-# vcom -reportprogress 300 -93 ../testbench/check_functions.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Compiling package check_functions
-# -- Compiling package body check_functions
-# -- Loading package check_functions
-# ** Warning: ../testbench/check_functions.vhd(49): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
-# ** Warning: ../testbench/check_functions.vhd(59): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
-# ** Warning: ../testbench/check_functions.vhd(65): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
-# ** Warning: ../testbench/check_functions.vhd(67): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
-# ** Warning: ../testbench/check_functions.vhd(68): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
-# ** Warning: ../testbench/check_functions.vhd(83): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
-# ** Warning: ../testbench/check_functions.vhd(93): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
-# ** Warning: ../testbench/check_functions.vhd(99): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
-# ** Warning: ../testbench/check_functions.vhd(101): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
-# ** Warning: ../testbench/check_functions.vhd(102): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
-# ** Warning: ../testbench/check_functions.vhd(117): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
-# ** Warning: ../testbench/check_functions.vhd(127): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
-# ** Warning: ../testbench/check_functions.vhd(133): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
-# ** Warning: ../testbench/check_functions.vhd(135): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
-# ** Warning: ../testbench/check_functions.vhd(136): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
-# ** Warning: ../testbench/check_functions.vhd(151): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
-# ** Warning: ../testbench/check_functions.vhd(161): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
-# ** Warning: ../testbench/check_functions.vhd(167): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
-# ** Warning: ../testbench/check_functions.vhd(169): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
-# ** Warning: ../testbench/check_functions.vhd(170): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
-# End time: 13:47:26 on Oct 14,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 20
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:47:26 on Oct 14,2020
-# vcom -reportprogress 300 -93 ../testbench/tb_Controller.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Loading package check_functions
-# -- Compiling entity tb_Controller
-# -- Compiling architecture testbench of tb_Controller
-# ** Warning: ../testbench/tb_Controller.vhd(129): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
-# ** Warning: ../testbench/tb_Controller.vhd(130): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
-# End time: 13:47:26 on Oct 14,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
-# End time: 13:47:27 on Oct 14,2020, Elapsed time: 0:49:14
-# Errors: 0, Warnings: 3
-# vsim tb_Controller -Gtext_in=Controller/in.txt 
-# Start time: 13:47:27 on Oct 14,2020
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.std_logic_textio(body)
-# Loading work.check_functions(body)
-# Loading work.tb_controller(testbench)
-# Loading work.controller(fast)
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: HP  Hostname: LAPTOP-L02PH027  ProcessID: 24864
-#           Attempting to use alternate WLF file "./wlft4hin5q".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft4hin5q
-# -=Controller test:======================================================
-# --R_OP test:------------------------------------------------------------
-# ** Error: Unexpected output value for op_alu
-#    Time: 22500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 42500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 62500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 82500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 102500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 122500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 142500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 162500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 202500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 222500 ps  Iteration: 1  Instance: /tb_controller
-# --RI_OP test:-----------------------------------------------------------
-# ** Error: Unexpected output value for op_alu
-#    Time: 242500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for sel_b
-#    Time: 242500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 262500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for sel_b
-#    Time: 262500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 282500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for sel_b
-#    Time: 282500 ps  Iteration: 1  Instance: /tb_controller
-# --I_OP test:------------------------------------------------------------
-# --UI_OP test:-----------------------------------------------------------
-# ** Error: Unexpected output value for op_alu
-#    Time: 322500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for rf_wren
-#    Time: 322500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 352500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for rf_wren
-#    Time: 352500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 382500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for rf_wren
-#    Time: 382500 ps  Iteration: 1  Instance: /tb_controller
-# --LOAD test:------------------------------------------------------------
-# --STORE test:-----------------------------------------------------------
-# --BRANCH test:----------------------------------------------------------
-# ** Error: Unexpected output value for branch_op
-#    Time: 457500 ps  Iteration: 1  Instance: /tb_controller
-# ** Warning: br: Make sure that with the given op_alu value, the ALU will always return 1.
-#    Time: 457500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for branch_op
-#    Time: 457500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for pc_add_imm
-#    Time: 457500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 477500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for branch_op
-#    Time: 477500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for branch_op
-#    Time: 477500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for pc_add_imm
-#    Time: 477500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 497500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for branch_op
-#    Time: 497500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for branch_op
-#    Time: 497500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for pc_add_imm
-#    Time: 497500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 517500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for branch_op
-#    Time: 517500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for branch_op
-#    Time: 517500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for pc_add_imm
-#    Time: 517500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 537500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for branch_op
-#    Time: 537500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for branch_op
-#    Time: 537500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for pc_add_imm
-#    Time: 537500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 557500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for branch_op
-#    Time: 557500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for branch_op
-#    Time: 557500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for pc_add_imm
-#    Time: 557500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 577500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for branch_op
-#    Time: 577500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for branch_op
-#    Time: 577500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for pc_add_imm
-#    Time: 577500 ps  Iteration: 1  Instance: /tb_controller
-# --CALL test:------------------------------------------------------------
-# ** Error: Unexpected output value for pc_sel_imm
-#    Time: 597500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for rf_wren
-#    Time: 597500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for pc_en
-#    Time: 597500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for sel_pc
-#    Time: 597500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for sel_ra
-#    Time: 597500 ps  Iteration: 1  Instance: /tb_controller
-# --CALLR test:-----------------------------------------------------------
-# --JMP test:-------------------------------------------------------------
-# ** Error: Unexpected output value for rf_wren
-#    Time: 617500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for pc_sel_a
-#    Time: 617500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for pc_en
-#    Time: 617500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for rf_wren
-#    Time: 637500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for pc_sel_a
-#    Time: 637500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for pc_en
-#    Time: 637500 ps  Iteration: 1  Instance: /tb_controller
-# --JMPI test:--------------------------------------------------
-# --BREAK test:-----------------------------------------------------------
-# ===================================================================
-# Errors encountered during simulation. Refer to the report.txt file.
-# ===================================================================
-do test_Controller.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work work 
-# Modifying C:/Users/HP/Documents/GitHub/NiosII/template/modelsim/multicycle_niosII.mpf
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:51:06 on Oct 14,2020
-# vcom -reportprogress 300 -93 ../vhdl/controller.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity controller
-# -- Compiling architecture synth of controller
-# End time: 13:51:06 on Oct 14,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:51:06 on Oct 14,2020
-# vcom -reportprogress 300 -93 ../testbench/check_functions.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Compiling package check_functions
-# -- Compiling package body check_functions
-# -- Loading package check_functions
-# ** Warning: ../testbench/check_functions.vhd(49): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
-# ** Warning: ../testbench/check_functions.vhd(59): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
-# ** Warning: ../testbench/check_functions.vhd(65): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
-# ** Warning: ../testbench/check_functions.vhd(67): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
-# ** Warning: ../testbench/check_functions.vhd(68): (vcom-1283) Cannot reference file "text_report" inside pure function "scheck".
-# ** Warning: ../testbench/check_functions.vhd(83): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
-# ** Warning: ../testbench/check_functions.vhd(93): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
-# ** Warning: ../testbench/check_functions.vhd(99): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
-# ** Warning: ../testbench/check_functions.vhd(101): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
-# ** Warning: ../testbench/check_functions.vhd(102): (vcom-1283) Cannot reference file "text_report" inside pure function "icheck".
-# ** Warning: ../testbench/check_functions.vhd(117): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
-# ** Warning: ../testbench/check_functions.vhd(127): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
-# ** Warning: ../testbench/check_functions.vhd(133): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
-# ** Warning: ../testbench/check_functions.vhd(135): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
-# ** Warning: ../testbench/check_functions.vhd(136): (vcom-1283) Cannot reference file "text_report" inside pure function "hcheck".
-# ** Warning: ../testbench/check_functions.vhd(151): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
-# ** Warning: ../testbench/check_functions.vhd(161): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
-# ** Warning: ../testbench/check_functions.vhd(167): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
-# ** Warning: ../testbench/check_functions.vhd(169): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
-# ** Warning: ../testbench/check_functions.vhd(170): (vcom-1283) Cannot reference file "text_report" inside pure function "bcheck".
-# End time: 13:51:06 on Oct 14,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 20
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:51:06 on Oct 14,2020
-# vcom -reportprogress 300 -93 ../testbench/tb_Controller.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Loading package check_functions
-# -- Compiling entity tb_Controller
-# -- Compiling architecture testbench of tb_Controller
-# ** Warning: ../testbench/tb_Controller.vhd(129): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
-# ** Warning: ../testbench/tb_Controller.vhd(130): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
-# End time: 13:51:06 on Oct 14,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
-# End time: 13:51:07 on Oct 14,2020, Elapsed time: 0:03:40
-# Errors: 60, Warnings: 4
-# vsim tb_Controller -Gtext_in=Controller/in.txt 
-# Start time: 13:51:07 on Oct 14,2020
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.std_logic_textio(body)
-# Loading work.check_functions(body)
-# Loading work.tb_controller(testbench)
-# Loading work.controller(fast)
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: HP  Hostname: LAPTOP-L02PH027  ProcessID: 24864
-#           Attempting to use alternate WLF file "./wlft9kyg3r".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft9kyg3r
-# -=Controller test:======================================================
-# --R_OP test:------------------------------------------------------------
-# ** Error: Unexpected output value for op_alu
-#    Time: 22500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 42500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 62500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 82500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 102500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 122500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 142500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 162500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 202500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 222500 ps  Iteration: 1  Instance: /tb_controller
-# --RI_OP test:-----------------------------------------------------------
-# ** Error: Unexpected output value for op_alu
-#    Time: 242500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for sel_b
-#    Time: 242500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 262500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for sel_b
-#    Time: 262500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 282500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for sel_b
-#    Time: 282500 ps  Iteration: 1  Instance: /tb_controller
-# --I_OP test:------------------------------------------------------------
-# --UI_OP test:-----------------------------------------------------------
-# ** Error: Unexpected output value for op_alu
-#    Time: 322500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for rf_wren
-#    Time: 322500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 352500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for rf_wren
-#    Time: 352500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 382500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for rf_wren
-#    Time: 382500 ps  Iteration: 1  Instance: /tb_controller
-# --LOAD test:------------------------------------------------------------
-# --STORE test:-----------------------------------------------------------
-# --BRANCH test:----------------------------------------------------------
-# ** Warning: br: Make sure that with the given op_alu value, the ALU will always return 1.
-#    Time: 457500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 477500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 497500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 517500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 537500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 557500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for op_alu
-#    Time: 577500 ps  Iteration: 1  Instance: /tb_controller
-# --CALL test:------------------------------------------------------------
-# ** Error: Unexpected output value for rf_wren
-#    Time: 597500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for pc_en
-#    Time: 597500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for sel_pc
-#    Time: 597500 ps  Iteration: 1  Instance: /tb_controller
-# --CALLR test:-----------------------------------------------------------
-# --JMP test:-------------------------------------------------------------
-# ** Error: Unexpected output value for rf_wren
-#    Time: 617500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for pc_sel_a
-#    Time: 617500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for pc_en
-#    Time: 617500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for rf_wren
-#    Time: 637500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for pc_sel_a
-#    Time: 637500 ps  Iteration: 1  Instance: /tb_controller
-# ** Error: Unexpected output value for pc_en
-#    Time: 637500 ps  Iteration: 1  Instance: /tb_controller
-# --JMPI test:--------------------------------------------------
-# --BREAK test:-----------------------------------------------------------
-# ===================================================================
-# Errors encountered during simulation. Refer to the report.txt file.
-# ===================================================================
-quit -sim
-# End time: 13:51:35 on Oct 14,2020, Elapsed time: 0:00:28
-# Errors: 37, Warnings: 4
-vsim work.tb_gecko -Gtext_in=Controller/in.txt
-# vsim work.tb_gecko -Gtext_in=Controller/in.txt 
-# Start time: 13:51:47 on Oct 14,2020
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+add wave -position insertpoint  \
+sim:/tb_gecko/gecko_0/b2v_inst/b2v_register_file_0/aa \
+sim:/tb_gecko/gecko_0/b2v_inst/b2v_register_file_0/ab
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run 1000000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+# Compile of register_file.vhd failed with 2 errors.
+# Compile of register_file.vhd failed with 1 errors.
+# Compile of register_file.vhd failed with 1 errors.
+# Compile of register_file.vhd was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.register_file(fast)
+run 1000000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+run 1000000
+run 1000000
+run 1000000
+run 1000000
+run 1000000
+run 1000000
+run 1000000
+run 10000000000000
+# Compile of PC.vhd was successful.
+# Break key hit
+# Break in Process reg at C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/IR.vhd line 16
+
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.register_file(fast)
+restart -f
+run 10000000000000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 4  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 40 ns  Iteration: 1  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 80 ns  Iteration: 1  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# Break key hit
+# Break in Process reg at C:/Users/HP/Documents/GitHub/NiosII/template/vhdl/IR.vhd line 16
+vsim -gui work.tb_gecko
+# End time: 13:09:03 on Oct 21,2020, Elapsed time: 0:40:49
+# Errors: 0, Warnings: 11
+# vsim -gui work.tb_gecko 
+# Start time: 13:09:03 on Oct 21,2020
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -652,35 +327,69 @@ vsim work.tb_gecko -Gtext_in=Controller/in.txt
 # Loading altera_mf.altera_common_conversion(body)
 # Loading altera_mf.altera_device_families(body)
 # Loading altera_mf.altsyncram(translated)
-# ** Warning: (vsim-3040) Command line generic/parameter "text_in" not found in design.
 add wave -position insertpoint  \
-sim:/tb_gecko/gecko_0/b2v_inst/b2v_alu_0/s
+sim:/tb_gecko/clk \
+sim:/tb_gecko/reset_n
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: HP  Hostname: LAPTOP-L02PH027  ProcessID: 24864
-#           Attempting to use alternate WLF file "./wlft6a0gii".
+#           Attempting to use alternate WLF file "./wlftyraeg0".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft6a0gii
-add wave -position insertpoint  \
-sim:/tb_gecko/gecko_0/b2v_inst/b2v_register_file_0/reg
+#           Using alternate file: ./wlftyraeg0
 add wave -position insertpoint  \
 sim:/tb_gecko/gecko_0/b2v_inst/b2v_controller_0/state
-add wave -position insertpoint  \
-sim:/tb_gecko/gecko_0/b2v_inst/b2v_controller_0/clk
-add wave -position insertpoint  \
-sim:/tb_gecko/gecko_0/b2v_inst/b2v_controller_0/reset_n
-run 1000
+run 1000000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_decoder_0
-run 1000000
-add wave -position insertpoint  \
-sim:/tb_gecko/gecko_0/b2v_inst/b2v_PC_0/addr
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 4  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 40 ns  Iteration: 1  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 80 ns  Iteration: 1  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# Compile of PC.vhd was successful.
+# Compile of register_file.vhd was successful.
+# 2 compiles, 0 failed with no errors.
 restart -f
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-3040) Command line generic/parameter "text_in" not found in design.
+# Loading work.pc(fast)
+# Loading work.register_file(fast)
+run 1000000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 4  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 40 ns  Iteration: 1  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 80 ns  Iteration: 1  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# Compile of register_file.vhd was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.register_file(fast)
 run 1000000
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
@@ -688,3 +397,136 @@ run 1000000
 #    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+run 1000000
+run 1000000
+run 1000000
+run 1000000
+run 1000000
+run 1000000
+run 1000000
+run 1000000
+run 1000000
+run 1000000
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run 1000000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+run 10000000
+# Compile of add_sub.vhd was successful.
+# Compile of register_file.vhd was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.add_sub(fast)
+# Loading work.register_file(fast)
+run 10000000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+# Compile of controller.vhd was successful.
+# Compile of add_sub.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+run 10000000
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.add_sub(fast)
+# Loading work.controller(fast)
+# Warning in wave window restart: (vish-4014) No objects found matching '/tb_gecko/gecko_0/b2v_inst/b2v_controller_0/state'. 
+run 10000000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+add wave -position insertpoint  \
+sim:/tb_gecko/gecko_0/b2v_inst/b2v_controller_0/current_state
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run 10000000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run 10000000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run 10000000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+# Compile of controller.vhd was successful.
+# Compile of register_file.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.controller(fast)
+# Loading work.register_file(fast)
+# Warning in wave window restart: (vish-4014) No objects found matching '/tb_gecko/gecko_0/b2v_inst/b2v_controller_0/current_state'. 
+add wave -position insertpoint  \
+sim:/tb_gecko/gecko_0/b2v_inst/b2v_controller_0/state
+restart -f
+run 10000000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_inst/b2v_register_file_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /tb_gecko/gecko_0/b2v_decoder_0
+run 100000000
