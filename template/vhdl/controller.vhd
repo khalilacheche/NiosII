@@ -128,74 +128,60 @@ sel_pc <= '1' when state = CALL_R or state = CALL  else '0';
 
 
 ------------- ALU OUT --------------------------                                             
-alu_out : PROCESS(state) IS
+alu_out : PROCESS(s_opx,s_op) IS
 	BEGIN                            
-	op_alu<=(OTHERS=>'0');	
-	IF (state = R_OP) THEN   
-		case s_opx is 
-			when x"18" => op_alu <= "011011";
-			when x"20" => op_alu <= "011100" ; 
-			when x"28" => op_alu <= "011101"; 
-			when x"30" => op_alu <= "011110" ; 
-			when x"03" => op_alu <= "110000" ;    
-			when x"0B" => op_alu <= "110001";           
-			when x"31" => op_alu <= "000000";     
-			when x"39" => op_alu <= "001000";
-		    when x"08" => op_alu <= "011001";           
-			when x"10" => op_alu <= "011010";     
-			when x"06" => op_alu <= "100000"; 
-			when x"0E" => op_alu <= "100001";  
-			when x"16" => op_alu <= "100010";          
-			when x"1E" => op_alu <= "100011";     
-			when x"13" => op_alu <= "110010";	
-			when x"1B" => op_alu <= "110011";           
-			when x"3B" => op_alu <= "110111";     
-			when others => 	op_alu(2 downto 0) <= opx(5 downto 3);   
-		end case ; 
-	ELSIF (state = I_OP  OR state = CALL ) THEN
-	              
-		case s_op is 
-		   when x"08" => op_alu <="011001";
-		   when x"10" => op_alu <="011010";
-		   when x"18" => op_alu <= "011011"; 
-		   when x"20" => op_alu <= "011100" ; 
-		   when others => 	op_alu(2 downto 0) <= op(5 downto 3);    
-		END CASE ; 
-		 
-	ELSIF (state = I_EXECUTE) THEN 
-		case s_op is 
+	  
+		
+
+
+		case s_op is  
+			when x"3A" => 
+						case s_opx is 
+		   						when x"18" => op_alu <= "011011";
+								when x"20" => op_alu <= "011100" ; 
+								when x"28" => op_alu <= "011101"; 
+								when x"30" => op_alu <= "011110" ; 
+								when x"03" => op_alu <= "110000" ;    
+								when x"0B" => op_alu <= "110001";           
+								when x"31" => op_alu <= "000000";     
+								when x"39" => op_alu <= "001000";
+							    when x"08" => op_alu <= "011001";           
+								when x"10" => op_alu <= "011010";     
+								when x"06" => op_alu <= "100000"; 
+								when x"0E" => op_alu <= "100001";  
+								when x"16" => op_alu <= "100010";          
+								when x"1E" => op_alu <= "100011";     
+								when x"13" => op_alu <= "110010";	
+								when x"1B" => op_alu <= "110011";           
+								when x"3B" => op_alu <= "110111";    
+								when x"12" => op_alu <= "110010"; 
+        						when x"1A" => op_alu <= "110011"; 
+        						when x"3A" => op_alu <= "110111";
+        						when x"02" => op_alu <= "110000" ; 
+								when others => 	op_alu(2 downto 0) <= opx(5 downto 3);   
+	   					end case ; 
 			when x"0c" => op_alu <= "100001" ; 
 			when x"14" => op_alu <= "100010" ;  
 			when x"1C" => op_alu <= "100011" ; 
 			when x"28" => op_alu <= "011101" ; 
-		    when x"30" => op_alu <= "011110";      
-		      when others => 	op_alu(2 downto 0) <= op(5 downto 3); 
+		    when x"30" => op_alu <= "011110";         
+		    when x"08" => op_alu <="011001";
+		    when x"10" => op_alu <="011010";
+		    when x"18" => op_alu <= "011011"; 
+		    when x"20" => op_alu <= "011100" ; 
+		    when x"06" => op_alu <= "011100"; 
+       		when x"0E" => op_alu <= "011001"; 
+       		when x"16" => op_alu <= "011010"; 
+       		when x"1E" => op_alu <= "011011"; 
+       		when x"26" => op_alu <= "011100";  
+       		when x"2E" => op_alu <= "011101"; 
+       		when x"36" => op_alu <= "011110"; 
+		    when others => 	op_alu(2 downto 0) <= op(5 downto 3); 
 		 END CASE ; 
-    ELSIF (state = R_EXECUTE) THEN 
-        case s_opx is 
-        	 when x"12" => op_alu <= "110010"; 
-        	 when x"1A" => op_alu <= "110011"; 
-        	 when x"3A" => op_alu <= "110111";
-        	 when x"02" => op_alu <= "110000" ;
-             when others =>     op_alu(2 downto 0) <= opx(5 downto 3); 
-        END CASE ;   
+   
+       
+       
     
-      
-    ELSIF (state = BRANCH) then    
-       case s_op is 
-       when x"06" => op_alu <= "011100"; 
-       when x"0E" => op_alu <= "011001"; 
-       when x"16" => op_alu <= "011010"; 
-       when x"1E" => op_alu <= "011011"; 
-       when x"26" => op_alu <= "011100";  
-       when x"2E" => op_alu <= "011101"; 
-       when x"36" => op_alu <= "011110"; 
-       when others =>    op_alu <= "000000";  
-       end case ; 
-       
-       
-        	 
-	END IF;
 	END PROCESS alu_out;
 
 end synth;
