@@ -56,19 +56,20 @@ BEGIN
             	state <= DECODE;   
             	
          	WHEN DECODE =>
-         		 if(s_opx =x"12" or s_opx =x"1A" or s_opx =x"3A" or s_opx =x"02") then state <= R_EXECUTE ;    
+         		 if(s_op=x"3A" and (s_opx =x"12" or s_opx =x"1A" or s_opx =x"3A" or s_opx =x"02")) then state <= R_EXECUTE ;    
          		 elsif (s_op = x"3A" and (s_opx = x"0D" or s_opx = x"05" )) then state <= JMP;  
          		 elsif (s_op = x"3A" and s_opx = x"1D") then state <= CALL_R;
-				 elsif(s_op = X"3A" and s_opx /= X"34" ) then state <= R_OP;   
+				 elsif(s_op = X"3A" ) then state <= R_OP;   
 				 elsif(s_op = x"0C" or s_op = x"14" or s_op = x"1C" or s_op=x"28" or s_op=x"30") then state <= I_EXECUTE ;  
-				 elsif (s_op = x"04"or s_op=x"08" or s_op=x"18" or s_op=x"20" or s_op=x"10") then state <= I_OP;
+		
 				 elsif (s_op = x"17" ) then state <= LOAD1;
 				 elsif (s_op = x"15" ) then state <= STORE;
 				 elsif (s_op = x"3A" and s_opx = x"34" ) then state <= BREAK;
 				 elsif (s_op = x"06" OR  s_op = x"0E" OR s_op = x"16" OR s_op = x"1E" OR s_op = x"26" OR s_op = x"2E" OR s_op = x"36") then state <= BRANCH;
 				 elsif (s_op = x"00") then state <= CALL; 
 				 
-				 elsif (s_op = x"01")then state <= JMPI;
+				 elsif (s_op = x"01")then state <= JMPI; 
+				 else state <= I_OP;
 			
 				 end if ; 	
             WHEN R_OP | R_EXECUTE =>
